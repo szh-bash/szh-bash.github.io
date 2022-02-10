@@ -1,9 +1,11 @@
 # 使用手册
-> Description: The Best-Assistant-Program for Digimon Masters Online (Global)
+> Description: The best auxiliary program for Digimon Masters Online (Global)
 > 
 > Author: Immortal.S 
 > 
 > Version: v0.54
+>
+> Date: 10.Feb.2022
 
 ## 环境要求
 - 大漠插件：v7.2149
