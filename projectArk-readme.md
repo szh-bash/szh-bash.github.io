@@ -18,9 +18,9 @@
 - 阅读使用手册，学习设置 set/cfg.json 参数
 - 运行 projectArk.exe
 - 主界面：
-  <!-- ![23](projectArk-readme/main.png) -->
+  ![23](projectArk-readme/main.png)
   
-  <img src="./projectArk-readme/main.png" height = "23%" width = "23%" alt="图片名称" align=center />
+  <!-- <img src="./projectArk-readme/main.png" height = "23%" width = "23%" alt="图片名称" align=center /> -->
 ### 快捷启动
 - 取消不常用功能预加载过程，加快 projectArk 程序启动速度
 - 界面：
