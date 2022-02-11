@@ -1,7 +1,7 @@
 ---
 layout: default
-title: [ProjectArk v0.54 使用手册]
-description: [The best auxiliary program for Digimon Masters Online (Global)]
+title: ProjectArk v0.54
+description: The best auxiliary program for Digimon Masters Online (Global)
 ---
 
 ## 环境要求
