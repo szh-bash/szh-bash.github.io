@@ -1,7 +1,7 @@
 ---
 layout: default
-title: ProjectArk v0.54
-description: The best auxiliary program for Digimon Masters Online (Global)
+title: ProjectArk
+description: Document
 ---
 
 ## 环境要求
@@ -17,15 +17,15 @@ description: The best auxiliary program for Digimon Masters Online (Global)
 - 阅读使用手册，学习设置 set/cfg.json 参数
 - 运行 projectArk.exe
 - 主界面：
-  
-  ![23](projectArk-readme/main.png)
+
+  ![23](/projectArk/resource/main.png)
   <!--  -->
-  <!-- <img src="./projectArk-readme/main.png" height = "23%" width = "23%" alt="图片名称" align=center /> -->
+  <!-- <img src=".//projectArk/resource/main.png" height = "23%" width = "23%" alt="图片名称" align=center /> -->
 ### 快捷启动
 - 取消不常用功能预加载过程，加快 projectArk 程序启动速度
 - 界面：
 
-  ![12](projectArk-readme/PreLoad.png)
+  ![12](/projectArk/resource/PreLoad.png)
 
 ## 功能介绍
 
@@ -46,7 +46,7 @@ description: The best auxiliary program for Digimon Masters Online (Global)
 - 注意事项：使用前请关闭与 NPC 对话界面以及背包
 - 界面：
 
-  ![12](projectArk-readme/Colo.png)
+  ![12](/projectArk/resource/Colo.png)
 
 ### Kill
 - 功能：点击后完全退出最顶层 GDMO 窗口所在进程
@@ -67,7 +67,7 @@ description: The best auxiliary program for Digimon Masters Online (Global)
 - DMO 相关功能字段
   - Configure 页面参数解释：隐藏功能及 DMO 优化
 
-     ![23](projectArk-readme/hide.png)
+     ![23](/projectArk/resource/hide.png)
     - hide: 是否隐藏 DMO 及其他窗口
       - 0，不启用隐藏功能
       - 1，启用隐藏功能
@@ -91,7 +91,7 @@ description: The best auxiliary program for Digimon Masters Online (Global)
 - 注意：本功能运行期间不可用 Hide 功能隐藏 dats.exe 窗口，目前只支持单个 dats.exe 挂机
 - 界面：
 
-  ![12](projectArk-readme/DATS.png)
+  ![12](/projectArk/resource/DATS.png)
 ##### BSoDGuard
 - 功能：防止 dats 断线重连时可能导致的电脑蓝屏问题
 - **默认启用**
@@ -132,7 +132,7 @@ description: The best auxiliary program for Digimon Masters Online (Global)
     - ticket：领取门票，需要借用弯刀脚本-自动领票功能
   - 界面：
 
-    ![12](projectArk-readme/Mail.png)
+    ![12](/projectArk/resource/Mail.png)
 
 ### Update
 - 功能： 一键更新路径中 DMLauncher.exe 并退出
@@ -148,7 +148,7 @@ description: The best auxiliary program for Digimon Masters Online (Global)
   - 角色：上次登录的角色
 - 字段
   - Configure 页面
-    - ![11](projectArk-readme/login.png)
+    - ![11](/projectArk/resource/login.png)
     - 从上往下依次是账号、密码、二级密码、启动路径
     - 启动路径示例：E:\GameKing\GDMO\GDMO.exe
     - 点击 show 可以显示密码明文，再点便恢复密文
