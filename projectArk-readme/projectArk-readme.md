@@ -1,8 +1,11 @@
----
-layout: default
-title: [ProjectArk v0.54 使用手册]
-description: [The best auxiliary program for Digimon Masters Online (Global)]
----
+# 使用手册
+> Description: The best auxiliary program for Digimon Masters Online (Global)
+> 
+> Author: Immortal.S 
+> 
+> Version: v0.54
+>
+> Date: 10.Feb.2022
 
 ## 环境要求
 - 大漠插件：v7.2149
@@ -17,10 +20,10 @@ description: [The best auxiliary program for Digimon Masters Online (Global)]
 - 阅读使用手册，学习设置 set/cfg.json 参数
 - 运行 projectArk.exe
 - 主界面：
-  
-  ![23](projectArk-readme/main.png)
   <!--  -->
-  <!-- <img src="./projectArk-readme/main.png" height = "23%" width = "23%" alt="图片名称" align=center /> -->
+  <!-- ![23](projectArk-readme/main.png) -->
+  
+  <img src="./projectArk-readme/main.png" height = "23%" width = "23%" alt="图片名称" align=center />
 ### 快捷启动
 - 取消不常用功能预加载过程，加快 projectArk 程序启动速度
 - 界面：
