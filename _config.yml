@@ -27,6 +27,8 @@ url: "szh-bash.github.io" # the base hostname & protocol for your site, e.g. htt
 twitter_username: ""
 github_username:  "szh-bash"
 author: "Immortal.S"
+owner_name: "szh-bash"
+owner_url: "https://github.com/szh-bash"
 
 # Build settings
 theme: minima
