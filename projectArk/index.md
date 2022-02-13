@@ -2,6 +2,7 @@
 layout: default
 title: ProjectArk
 description: The best auxiliary program for Digimon Masters Online Global
+projectArk: True
 ---
 ## Advantage
 - 优化 CPU（8开风扇不转），节约电费

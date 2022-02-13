@@ -1,7 +1,8 @@
 ---
 layout: default
 title: ProjectArk
-description: Document
+description: The best auxiliary program for Digimon Masters Online Global
+projectArk: True
 ---
 
 ## 环境要求

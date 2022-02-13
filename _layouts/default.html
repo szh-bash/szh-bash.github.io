@@ -60,6 +60,7 @@
           /* background-color: #111; */
           color:rgb(0, 225, 255)
       }
+     
       .top ul li ul{
           /* 设置二级菜单 */
           margin-left: -0.2px;
@@ -87,10 +88,10 @@
               <li><a href="/">Home</a></li>
               <li>
                   <a href="/projectArk/">ProjectArk</a>
-                  <ul>
+                  <!-- <ul>
                       <li><a href="/projectArk/download">Download</a></li>
                       <li><a href="/projectArk/document">Document</a></li>
-                  </ul>
+                  </ul> -->
               </li>        
             </ul>
             </center>      
@@ -105,6 +106,11 @@
     <header class="page-header" role="banner">
       <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
       <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
+      {% if page.projectArk %}
+        <a href="/projectArk/" class="btn">Introduction</a>
+        <a href="/projectArk/download" class="btn">Download</a>
+        <a href="/projectArk/document" class="btn">Document</a>
+      {% endif %}
       {% if site.github.is_project_page %}
         <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
       {% endif %}
@@ -112,6 +118,8 @@
         <a href="{{ site.github.zip_url }}" class="btn">Download .zip</a>
         <a href="{{ site.github.tar_url }}" class="btn">Download .tar.gz</a>
       {% endif %}
+      <!-- {% if site.projectArk.show_downloads %} -->
+      <!-- {% endif %} -->
     </header>
 
     <main id="content" class="main-content" role="main">
