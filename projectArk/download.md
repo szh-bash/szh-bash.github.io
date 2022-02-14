@@ -30,5 +30,5 @@ projectArk: True
   </TR>
 </TABLE>
 <p>Password: Please <A href="/">contact author</a></p>
-<!-- projectArk_free {{ site.projectArk_free_version }} -->
-<!-- projectArk_VIP {{ site.projectArk_VIP_version }} -->
+<!-- projectArk {{ site.projectArk_free_version }} -->
+<!-- projectArk-VIP {{ site.projectArk_VIP_version }} -->
