@@ -15,4 +15,4 @@ projectArk: True
 
 详见: [Document](./document)
 
-感兴趣请联系作者，成本价 5R/月，用爱发电
+感兴趣请[联系作者](/)，成本价 5R/月，用爱发电
