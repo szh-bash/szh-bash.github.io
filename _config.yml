@@ -22,8 +22,8 @@ title: Immortal.S Blog
 email: x799927254@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   A world full of creation
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "szh-bash.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "https://szh-bash.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: ""
 github_username:  szh-bash
 author: Immortal.S

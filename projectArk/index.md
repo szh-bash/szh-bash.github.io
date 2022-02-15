@@ -4,7 +4,7 @@ title: ProjectArk
 description: The best auxiliary program for Digimon Masters Online Global
 projectArk: True
 ---
-## Purpose
+# Purpose
 致力于给所有驯兽师带来更好的数码世界体验
 ## Advantage
 - 优化 CPU 占用至 1%，安静挂机

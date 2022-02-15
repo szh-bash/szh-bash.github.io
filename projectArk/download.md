@@ -4,7 +4,7 @@ title: ProjectArk
 description: The best auxiliary program for Digimon Masters Online Global
 projectArk: True
 ---
-<h2>Released</h2>
+<h1>Released</h1>
 <TABLE cellspacing ="1" cellpadding ="6" border = "0">
   <TR>
     <TH class="Title" align="center" width=auto>Link</TH>
