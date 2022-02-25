@@ -5,7 +5,8 @@ description: The best auxiliary program for Digimon Masters Online Global
 projectArk: True
 ---
 # Document
-
+> version: v0.60
+> date: 2022.2.25
 ## 环境要求
 - 大漠插件：v7.2149
 - 操作系统：windows 10 21H2 及之前
@@ -73,6 +74,7 @@ projectArk: True
     - hide: 是否隐藏 DMO 及其他窗口
       - 0，不启用隐藏功能
       - 1，启用隐藏功能
+      - 2, 仅隐藏 DMO 进程中非客户端窗口，如启动时游戏盾 LOGO
     - cpu: 影响 rate 值意义 
       - 0, rate 值越大优化 CPU 占用效果越好
       - 1，rate 值代表 DMO 最大 fps 值
