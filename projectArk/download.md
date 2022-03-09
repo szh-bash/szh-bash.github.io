@@ -15,16 +15,16 @@ projectArk: True
   </TR>
   <TR>
     <TD class="Item" align="center"><A href="projectArk_free_installer.exe">projectArk</A></TD>
-    <TD class="Item" align="center">8.248 MB</TD>
-    <TD class="Item" align="center">2021-03-08</TD>
+    <TD class="Item" align="center">9.122 MB</TD>
+    <TD class="Item" align="center">2021-03-09</TD>
     <TD class="Item" align="center">{{ site.projectArk_free_version }}</TD>
     <TD class="Item">See <a style="text-decoration:none;" href="/projectArk/document">Document</a></TD>
     <!-- <TD class="Item" rowspan=3>LZMA SDK<BR>C, C++, C#, Java <BR>x86/x64 binaries for Windows</TD> -->
   </TR>
   <TR>
     <TD class="Item" align="center"><A href="projectArk_installer.exe">projectArk-VIP</A></TD>
-    <TD class="Item" align="center">8.258 MB</TD>
-    <TD class="Item" align="center">2021-03-08</TD>
+    <TD class="Item" align="center">9.133 MB</TD>
+    <TD class="Item" align="center">2021-03-09</TD>
     <TD class="Item" align="center">{{ site.projectArk_VIP_version }}</TD>
     <TD class="Item">Include Hbu5-hijack</TD>
   </TR>
