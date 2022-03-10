@@ -24,7 +24,7 @@ projectArk: True
   <TR>
     <TD class="Item" align="center"><A href="projectArk_installer.exe">projectArk-VIP</A></TD>
     <TD class="Item" align="center">9.133 MB</TD>
-    <TD class="Item" align="center">2021-03-09</TD>
+    <TD class="Item" align="center">2021-03-10</TD>
     <TD class="Item" align="center">{{ site.projectArk_VIP_version }}</TD>
     <TD class="Item">Include Hbu5-hijack</TD>
   </TR>
