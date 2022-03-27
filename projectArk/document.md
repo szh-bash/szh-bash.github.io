@@ -40,6 +40,10 @@ projectArk: True
         否则设置为 N，程序将在更新完毕后启动
 - 606731979 群文件下载，
 
+## 快捷键
+- ctrl-e: 隐藏 projectArk 窗口
+- ctrl-w: 关闭 projectArk
+
 
 ## 功能介绍
 
