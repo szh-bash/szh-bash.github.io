@@ -5,15 +5,18 @@ description: The best auxiliary program for Digimon Masters Online Global
 projectArk: True
 ---
 # Document
-> version: v0.60
+> Version: v0.73
 >
-> date: 2022.2.25
+> Date: 2022.3.27
+>
+> Author: Immortal.S
+
 ## 环境要求
 - 大漠插件：v7.2149
-- 操作系统：windows 10 21H2 及之前
+- 操作系统：windows 11 21H2 及之前
 - 系统缩放：部分功能要求系统缩放 100%
-- 硬盘：20 MB 及以上空间
-- 网络：连接互联网
+- 网络：流畅访问 [szh-bash.github.io](https://szh-bash.github.io)
+- 硬盘：15 MB 及以上空间
 
 ## 安装与启动
 - 下载并解压最新 projectArk 压缩包
@@ -25,16 +28,37 @@ projectArk: True
   ![23](/projectArk/resource/main.png)
   <!--  -->
   <!-- <img src=".//projectArk/resource/main.png" height = "23%" width = "23%" alt="图片名称" align=center /> -->
-### 快捷启动
-- 取消不常用功能预加载过程，加快 projectArk 程序启动速度
+
+## 更新方式
+- projectArk 启动时自动更新，保留参数设置
+  - cfg.json
+
+        ...
+        "arkUpdateLater": "Y", 
+        ...
+        建议网络不好的用户将此项设置为 Y，程序将在启动后下载更新包避免网络波动导致下载意外中断更新出错，更新包下载完毕后提示更新；
+        否则设置为 N，程序将在更新完毕后启动
+- 606731979 群文件下载，
+
+
+## 功能介绍
+
+### Fast Initialize
+- 仅勾选常用功能，加快 projectArk 程序启动速度
 - 界面：
 
   ![12](/projectArk/resource/PreLoad.png)
 
-## 功能介绍
+### Hbu5
+- 功能：自动扭蛋脚本
+- 设置：填写 configure 页面账号、客户端路径信息并 save
+- 限制:
+  - 驯兽师的站位: 按“空格”可以与 D-Code II 扭蛋机对话
+  - 游戏分辨率设置: 1024x768
+  - 系统缩放设置: 100%
 
 ### Colo
-- 功能：自动快速召唤 Colo 下一关，可在中途转为弯刀打怪，打怪模式下可提前跑至下一层 BOSS 刷新点等待，可反馈每层击杀怪物时间以及总 Colo 时间
+- 功能：自动快速召唤 Colo 下一关，可在中途转为弯刀打怪，后两种打怪模式下角色可提前自动跑至下一层 BOSS 刷新点等待（需要正确设置当前层数），反馈每层击杀怪物时间以及总 Colo 时间
 - 环境要求：系统缩放 100%
 - 使用说明
   - 参数设置
@@ -44,7 +68,7 @@ projectArk: True
       - summon & attack: 召唤至指定层后转由 dats 打怪
     - start: 选择当前起始层
     - attack: 转为战斗的层数
-    - 驯兽师位置要求：按空格可以与 NPC 对话
+    - 驯兽师自动召唤位置要求：按空格可以与 NPC 对话
   - 启动功能：点击 Colo 自动控制最顶层 DMO 窗口
   - 终止功能：再次点击 Colo
 - 注意事项：使用前请关闭与 NPC 对话界面以及背包
@@ -91,9 +115,21 @@ projectArk: True
 
 ### DATS - 即将支持全服
 ##### 说明
-- 功能：通过 dats.exe 实现部分自动化功能，具体表现依据 DATS 页面参数设定。
-- 使用：主界面单击 DATS 启用功能，去除勾选 dats.exe 的 “掉线重连” 并开始挂机
-- 注意：本功能运行期间不可用 Hide 功能隐藏 dats.exe 窗口，目前只支持单个 dats.exe 挂机
+- 功能：通过持续监控 dats.exe 的挂机过程实现相应自动化功能，具体表现依据 DATS 页面参数设定。
+- 参数:
+  - cfg.json:
+
+        ...
+        "DATS":{
+          ...
+          "ExePath": "D:\\Game\\DigimonMasters\\DATS v5.91\\dats.exe",
+          "Server-0": "国际服",
+          "Mode": "野外" 
+        }
+        ...
+      (若守护的是副本模式就把“野外”改为“副本”，第二行服务器同理)
+- 使用：主界面单击 DATS 启用功能，去除勾选目标 dats.exe 的 “掉线重连” 并点击“开始”
+- 注意：本功能运行期间 **不可用 Hide 功能隐藏 dats.exe 窗口**，目前只支持单个 dats.exe 挂机
 - 界面：
 
   ![12](/projectArk/resource/DATS.png)
@@ -101,20 +137,20 @@ projectArk: True
 - 功能：防止 dats 断线重连时可能导致的电脑蓝屏问题
 - **默认启用**
 
+##### ReLogin
+- 功能：dats 崩溃后自动重启并挂机
+- 参数设置：cfg["DATS"]["ExePath"] 字段设置 "dats.exe" 启动路径
+
 ##### NoACT
 - 功能：DMO 登录后自动开启无动作
 
-##### HP
+<!-- ##### HP
 - 功能：检测到 dats 开始吃药后停止挂机，连续吃若干口药后继续挂机
 - 使用说明：dats 设置较低的吃药血线，cfg["DATS"]["HP"]["key"] 为吃药键，["times"] 为吃药次数
 
 ##### DS
 - 功能：数码兽 DS 耗尽后自动退化再进化，适用于小号挂野外
-- 使用说明：DATS 设置数码兽回蓝按钮为非吃药键，例如攻击键 (默认为 1)
-
-##### ReLogin
-- 功能：dats 崩溃后自动重启并挂机
-- 参数设置：cfg["DATS"]["ExePath"] 字段设置 "dats.exe" 启动路径
+- 使用说明：DATS 设置数码兽回蓝按钮为非吃药键，例如攻击键 (默认为 1) -->
 
 ##### NoCD
 - 功能：DMO 登录后自动开启无 CD 进化
@@ -140,9 +176,14 @@ projectArk: True
     ![12](/projectArk/resource/Mail.png)
 
 ### Update
-- 功能： 一键更新路径中 DMLauncher.exe 并退出
+- 功能： 一键搜索并更新路径中的全部 DMLauncher.exe 并退出
 - 字段说明
-  - cfg.json["updatePath"] ：["E:/GameKing/GDMOa","E:/GameKing/GDMOb"] 
+  - cfg.json
+
+        ...
+        "updatePath":["E:/GameKing/GDMO/DMLauncher.exe",
+                      "E:/GameKing"] 
+        ...
   - 路径用双引号括起，逗号隔开相邻路径
   - '/' 或 '\\\\'划分客户端路径，不可用反斜杠 '\\'
   
@@ -171,8 +212,6 @@ projectArk: True
     - 再次点击 auto_login
 - 用途：与 dats 多开不冲突，一般可用来启动仓库号摆商店，或上大号手动
 
-### Hbu5 - 暂不开放
-- 功能：自动扭蛋脚本，鉴于用户使用策略会极大破坏整体玩家游戏社区体验，下次一定
 
 ## 其他
 - 及时更新 dm.dll 版本避免意外 BUG
