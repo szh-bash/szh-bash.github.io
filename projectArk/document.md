@@ -41,9 +41,17 @@ projectArk: True
 - 606731979 群文件下载，
 
 ## 快捷键
-- ctrl-e: 隐藏 projectArk 窗口
-- ctrl-w: 关闭 projectArk
+- cfg.json
 
+      ...
+      "ShortCut": {
+          "hide": "E", 隐藏 projectArk 窗口, 组合键 ctrl-e
+          "save": "S", 保存 projectArk 参数设置, 组合键 ctrl-s
+          "exit": "W"  退出 projectArk，组合键 ctrl-w
+      }
+      ...
+    可自定义为其他键位与 ctrl 组合触发
+  
 
 ## 功能介绍
 
