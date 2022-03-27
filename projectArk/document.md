@@ -63,7 +63,7 @@ projectArk: True
   ![12](/projectArk/resource/PreLoad.png)
 
 ### Hbu5
-- 功能：自动扭蛋脚本，出货率约为 1 D-CodeII = 1 hbu5
+- 功能：自动扭蛋脚本，出货率约为 1 D-CodeII = 1 hbu5，自动断线重连
 - 设置：填写 configure 页面账号、客户端路径信息并 save
 - 限制:
   - 驯兽师的站位: 按“空格”可以与 D-Code II 扭蛋机对话
