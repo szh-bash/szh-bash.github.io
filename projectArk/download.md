@@ -15,7 +15,7 @@ projectArk: True
   </TR>
   <TR>
     <TD class="Item" align="center"><A href="/projectArk/download/projectArk_installer.exe">projectArk</A></TD>
-    <TD class="Item" align="center">10.150 MB</TD>
+    <TD class="Item" align="center">9.91 MB</TD>
     <TD class="Item" align="center">{{ site.projectArk_version_update }}</TD>
     <TD class="Item" align="center">{{ site.projectArk_version }}</TD>
     <TD class="Item">See <a style="text-decoration:none;" href="/projectArk/document">Document</a></TD>
