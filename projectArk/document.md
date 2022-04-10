@@ -5,9 +5,9 @@ description: The best auxiliary program for Digimon Masters Online Global
 projectArk: True
 ---
 # Document
-> Version: v0.74
+> Version: v0.77
 >
-> Date: 2022.4.5
+> Date: 2022.4.10
 >
 > Author: Immortal.S
 
@@ -68,7 +68,7 @@ projectArk: True
 - 功能：自动扭蛋脚本，出货率约为 1 D-CodeII = 1 hbu5，自动断线重连
 - 设置：
 
-      - 填写 configure 页面中的账号（steam 用户无需填写）、客户端 (gdmo.exe) 路径信息并 save
+      - 填写 configure 页面中的账号、密码、二级密码（steam 用户无需填写）、客户端路径 (gdmo.exe) 信息并 save
       - 驯兽师的站位: 按“空格”可以与 D-Code II 扭蛋机对话
       - 游戏分辨率设置: 1024x768
       - 系统缩放设置: 100%
