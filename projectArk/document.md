@@ -5,9 +5,9 @@ description: The best auxiliary program for Digimon Masters Online Global
 projectArk: True
 ---
 # Document
-> Version: v0.77
+> Version: v0.78
 >
-> Date: 2022.4.10
+> Date: 2022.4.11
 >
 > Author: Immortal.S
 
@@ -132,7 +132,8 @@ projectArk: True
     - cfg.json["hide"~"downCpu"]
   - cfg.json 参数设置：隐藏非 DMO 窗口
 
-        - cfg.json["hideWindow"]: [["进程名.exe", "窗口标题"，"窗口类型"], ["dats", "", ""]]
+        - cfg.json["hideWindow"]: [["进程名.exe", "窗口标题"，"窗口类型", 启用与否(1或0)], ["dats", "", "", 1]]
+        - 数字 1 代表启用这条规则，0 则不启用
         - 窗口标题参数为模糊匹配，可填入目标窗口的部分标题，可省略
         - 窗口类型可省略
         - 具体可联系作者获取目标进程相关参数
