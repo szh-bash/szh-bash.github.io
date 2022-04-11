@@ -5,7 +5,7 @@ description: The best auxiliary program for Digimon Masters Online Global
 projectArk: True
 ---
 # Document
-> Version: v0.78
+> Version: v0.79
 >
 > Date: 2022.4.11
 >
@@ -40,7 +40,7 @@ projectArk: True
         ...
         建议网络不好的用户将此项设置为 Y，程序将在启动后下载更新包避免网络波动导致下载意外中断更新出错，更新包下载完毕后提示更新；
         否则设置为 N，程序将在更新完毕后启动
-- 606731979 群文件下载，
+- 606731979 群文件下载更新
 
 ## 快捷键
 - ctrl-e: 隐藏 projectArk 窗口
