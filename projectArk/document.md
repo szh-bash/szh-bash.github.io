@@ -5,9 +5,9 @@ description: The best auxiliary program for Digimon Masters Online Global
 projectArk: True
 ---
 # Document
-> Version: v0.79
+> Version: v0.81
 >
-> Date: 2022.4.11
+> Date: 2022.4.14
 >
 > Author: Immortal.S
 
@@ -75,6 +75,7 @@ projectArk: True
 - 注意：
   - 此模式绑定的窗口将无视 hide 功能的优化设置，启用 hide 功能后将自动限制为 fps 上限 20 帧
   - 程序将仅绑定设置路径中的客户端窗口
+  - 如果遇到不抽扭蛋的情况，可以将 cfg.json['fastHbu5'] 改为 'N' 再次尝试，若还是不行请联系作者
 
 ### Colo
 - 功能：自动快速召唤 Colo 下一关，可在中途转为弯刀打怪，后两种打怪模式下角色可提前自动跑至下一层 BOSS 刷新点等待（需要正确设置当前层数），反馈每层击杀怪物时间以及总 Colo 时间
@@ -110,7 +111,9 @@ projectArk: True
   - 上述功能对断线重连的 DMO 窗口依然自动生效
     - 若 DATS 未被隐藏，projectArk 将在 DMO 被 DATS 绑定打怪后优化 CPU
     - 若 DATS 被隐藏，projectArk 将在 DMO 账号登录完成的 60 秒后优化 CPU
-- 注意: 不可在 DMO 窗口正在加载地图或登陆过程中开始启动此功能
+- 注意: 
+  - CPU 具体优化与 CPU、游戏场景相关，**追 BOSS 时优化效果较差**
+  - 不可在 DMO 窗口正在加载地图或登陆过程中开始启动此功能
 - 使用：主页面单击 Hide 启用功能，具体表现依据 configure 页面参数以及 cfg.json 中参数设定
 - DMO 相关功能字段
   - Configure 页面参数解释：隐藏功能及 DMO 优化
@@ -128,6 +131,7 @@ projectArk: True
     - rate: 意义取决于 cpu 值
     
           - 非负整数，0 代表不优化 CPU 占用
+          - 仅对被弯刀或本程序其他功能绑定的 DMO 窗口生效，未绑定的 DMO 窗口默认极致优化（1fps)
     - 参数更新后重启 Hide 即可生效；点击 save 更新 set/cfg.json 文件内容
     - cfg.json["hide"~"downCpu"]
   - cfg.json 参数设置：隐藏非 DMO 窗口
