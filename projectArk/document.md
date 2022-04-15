@@ -7,7 +7,7 @@ projectArk: True
 # Document
 > Version: v0.81
 >
-> Date: 2022.4.14
+> Date: 2022.4.15
 >
 > Author: Immortal.S
 
@@ -32,6 +32,8 @@ projectArk: True
   ![23](/projectArk/resource/main.png)
 
 ## 更新方式
+- 群文件下载更新
+- projectArk 运行中推送更新
 - projectArk 启动时自动更新，保留参数设置
   - cfg.json
 
@@ -40,7 +42,6 @@ projectArk: True
         ...
         建议网络不好的用户将此项设置为 Y，程序将在启动后下载更新包避免网络波动导致下载意外中断更新出错，更新包下载完毕后提示更新；
         否则设置为 N，程序将在更新完毕后启动
-- 群文件下载更新
 
 ## 快捷键
 - ctrl-e: 隐藏 projectArk 窗口
@@ -69,12 +70,12 @@ projectArk: True
 - 设置：
 
       - 填写 configure 页面中的账号、密码、二级密码（steam 用户无需填写）、客户端路径 (gdmo.exe) 信息并 save
-      - 驯兽师的站位: 按“空格”可以与 D-Code II 扭蛋机对话
+      - 驯兽师的站位: 按“空格”可以与 D-Code II 扭蛋机对话，请确保 ark 可以自动打开扭蛋机并正确识别 HBU5 余量
       - 游戏分辨率设置: 1024x768
       - 系统缩放设置: 100%
 - 注意：
-  - 此模式绑定的窗口将无视 hide 功能的优化设置，启用 hide 功能后将自动限制为 fps 上限 20 帧
   - 程序将仅绑定设置路径中的客户端窗口
+  - 此模式绑定的窗口将无视 hide 功能的优化设置，启用 hide 功能后将自动限制为 fps 上限 20 帧
   - 如果遇到不抽扭蛋的情况，可以将 cfg.json['fastHbu5'] 改为 'N' 再次尝试，若还是不行请联系作者
 
 ### Colo
@@ -142,7 +143,7 @@ projectArk: True
         - 窗口类型可省略
         - 具体可联系作者获取目标进程相关参数
 
-### DATS
+### DATS - 支持全服
 ##### 说明
 - 功能：通过持续监控 dats.exe 的挂机过程实现相应自动化功能，具体表现依据 DATS 页面参数设定。
 - 参数:
