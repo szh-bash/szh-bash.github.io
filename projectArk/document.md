@@ -5,9 +5,9 @@ description: The best auxiliary program for Digimon Masters Online Global
 projectArk: True
 ---
 # Document
-> Version: v0.81
+> Version: v0.82
 >
-> Date: 2022.4.15
+> Date: 2022.4.16
 >
 > Author: Immortal.S
 
@@ -20,7 +20,7 @@ projectArk: True
 
 ## 安装与启动
 - 下载并解压最新 projectArk 压缩包
-- 下载并解压最新大漠插件压缩包并注册 dm.dll 到系统
+- 下载并解压最新大漠插件压缩包并注册 dm.dll 到系统.如果出现注册成功后显示版本过低，则将大漠插件移至C盘任意目录重新注册即可
 - 阅读使用手册，学习设置 set/cfg.json 参数
 - 运行 projectArk.exe
 - 启动画面：
@@ -60,7 +60,7 @@ projectArk: True
 ## 功能介绍
 
 ### Fast Initialize
-- 建议仅勾选常用功能，加快 projectArk 程序启动速度
+- 仅勾选常用功能以便加快 projectArk 程序启动速度
 - 界面：
 
   ![12](/projectArk/resource/PreLoad.png)
@@ -186,6 +186,48 @@ projectArk: True
 - 功能：DMO 登录后自动开启无 CD 进化
 - 注意：dats 挂机后会默认关闭无 CD 进化，本属性比较鸡肋
 
+### Login
+- 功能
+  - 启动 configure 路径记录的 gdmo.exe 并根据账号信息自动登录，根据 "KeepALive" 参数值决定是否保持角色在线（"Y" 或 "N"）
+  - 选区：奥米加服务器，可在服务器已满、服务器消失情况下自动登录。
+  - 角色：上次登录的角色
+  - 注意：路径请勿与 dats 负责路径重合
+- 字段
+  - Configure 页面
+
+    ![11](/projectArk/resource/login.png)
+
+        - 从上往下依次是账号、密码、二级密码、启动路径
+        - 启动路径示例：E:\GameKing\GDMO\GDMO.exe
+        - 点击 show 可以显示密码明文，再点便恢复密文
+        - 修改参数后重启功能立刻生效，点击 save 更新 set/cfg.json
+        - steam 用户无需填写账号信息
+  - cfg.json
+
+        ...
+        "userID": "账号",
+        "pwd": "密码",
+        "secPwd": "二级密码",
+        "exePath": "E:\\GameKing\\GDMO\\GDMO.exe",
+        "KeepALive": "Y" 代表启用保持在线，"N" 则关闭该功能
+        ...
+- 使用
+  - 点击 login，自动绑定最顶层 dmo 窗口；若无已打开的 dmo 窗口则启动路径中的 dmo 程序
+  - 若在待绑定的 dmo 窗口处于账号密码界面，请确保光标在账号栏保持跳动
+- 用途：与 dats 多开不冲突，一般可用来启动仓库号摆商店，或上大号手动
+
+### Update
+- 功能： 一键搜索并更新路径中的全部 DMLauncher.exe 并退出
+- 字段说明
+  - cfg.json
+
+        ...
+        "updatePath":["E:/GameKing/GDMO/DMLauncher.exe",
+                      "E:/GameKing"] 
+        ...
+  - 路径用双引号括起，逗号隔开相邻路径
+  - '/' 或 '\\\\'划分客户端路径，不可用反斜杠 '\\'
+  
 ### Email
 - 功能，点击 Email 按钮启用
   - 功能：连续登陆用户填写的账户，每个账户登录默认角色领取所有邮件并尝试领取顽固票后退出
@@ -206,39 +248,6 @@ projectArk: True
         - mail：领取邮件
         - event：领取特殊时段在线奖励
         - ticket：领取门票，需要借用弯刀脚本-自动领票功能
-
-### Update
-- 功能： 一键搜索并更新路径中的全部 DMLauncher.exe 并退出
-- 字段说明
-  - cfg.json
-
-        ...
-        "updatePath":["E:/GameKing/GDMO/DMLauncher.exe",
-                      "E:/GameKing"] 
-        ...
-  - 路径用双引号括起，逗号隔开相邻路径
-  - '/' 或 '\\\\'划分客户端路径，不可用反斜杠 '\\'
-  
-### Login
-- 功能
-  - 启动 configure 路径记录的 gdmo.exe 并根据账号信息自动登录，路径请勿与 dats 负责路径重合，避免意外情况
-  - 选区：奥米加服务器，可在服务器已满、服务器消失情况下自动登录。
-  - 角色：上次登录的角色
-- 字段
-  - Configure 页面
-
-    ![11](/projectArk/resource/login.png)
-
-        - 从上往下依次是账号、密码、二级密码、启动路径
-        - 启动路径示例：E:\GameKing\GDMO\GDMO.exe
-        - 点击 show 可以显示密码明文，再点便恢复密文
-        - 修改参数后重启功能立刻生效，点击 save 更新 set/cfg.json
-        - steam 用户无需填写账号信息
-  - cfg.json["userID"~"exePath"]
-- 使用
-  - 点击 login，自动绑定最顶层 dmo 窗口；若无已打开的 dmo 窗口则启动路径中的 dmo 程序
-  - 若在待绑定的 dmo 窗口处于账号密码界面，请确保光标在账号栏保持跳动
-- 用途：与 dats 多开不冲突，一般可用来启动仓库号摆商店，或上大号手动
 
 
 ## 其他
