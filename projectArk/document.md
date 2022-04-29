@@ -4,12 +4,36 @@ title: ProjectArk
 description: The best auxiliary program for Digimon Masters Online Global
 projectArk: True
 ---
+
 # Document
 > Version: v0.82
 >
 > Date: 2022.4.16
 >
 > Author: Immortal.S
+
+- [Document](#document)
+  - [环境要求](#环境要求)
+  - [安装与启动](#安装与启动)
+  - [更新方式](#更新方式)
+  - [快捷键](#快捷键)
+  - [功能介绍](#功能介绍)
+    - [Fast Initialize](#fast-initialize)
+    - [Hbu5](#hbu5)
+    - [Colo](#colo)
+    - [Kill - 支持全服](#kill---支持全服)
+    - [Top - 支持全服](#top---支持全服)
+    - [Hide - 支持全服](#hide---支持全服)
+    - [DATS - 支持全服](#dats---支持全服)
+        - [说明](#说明)
+        - [BSoDGuard](#bsodguard)
+        - [ReLogin - 仅支持单个弯刀脚本](#relogin---仅支持单个弯刀脚本)
+        - [NoACT](#noact)
+        - [NoCD](#nocd)
+    - [Login](#login)
+    - [Update](#update)
+    - [Email](#email)
+  - [其他](#其他)
 
 ## 环境要求
 - 大漠插件：v7.2149
