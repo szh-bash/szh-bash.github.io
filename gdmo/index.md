@@ -47,23 +47,28 @@ description: 愿你享受在数码世界的时光
     - [图鉴系统](#图鉴系统)
     - [称号系统](#称号系统)
     - [氪金系统](#氪金系统)
-    - [常见道具及来源](#常见道具及来源)
+  - [### 常见道具及来源](#-常见道具及来源)
   - [辅助程序及资料](#辅助程序及资料)
     - [弯刀](#弯刀)
     - [projectArk](#projectark)
     - [百科全书（hkdmoApp)](#百科全书hkdmoapp)
     - [DMO-Wiki](#dmo-wiki)
 
+---
+
 ## 下载安装
+
 ### 官网
 - [主页](https://dmo.gameking.com)
 - [注册](https://dmo.gameking.com/Sign/SignUp.aspx)
 - [下载](https://dmo.gameking.com/download/GameDownload.aspx)
+  
 ### 群文件
 GDMO.7z
 ### 官网账号注册
 * 点击官网 SignUP 或上述链接，给邮箱发送注册链接
 * 需要 VPN（不是加速器） 在注册页面通过谷歌机器人验证才可注册，可以找群友帮忙注册
+  
 ### 登录端介绍
 - 本服为国际服，可通过官网客户端或者 steam 客户端两种方式登录服务器。
 - 官网客户端登录
@@ -82,18 +87,25 @@ GDMO.7z
   - 缺点：
     - 游戏商场内购买的全部道具均不可交易（官网端可以）、不可叠加（你的背包格子是有上限的，非常容易被占满），购物体验较差
     - 经常会买不到限定的氪金礼包
+  
+---
 ## 游戏内容
+
 ### 常用设置
 - 节能具体设置
   - 通过界面右下角设置按钮打开设置界面，分别设置 interface 和 graph
   - interface
+  
     ![1](image/interface1.png)
     ![2](image/interface2.png)
     ![3](image/interface3.png)
   - graph
+  
     ![1](image/graph.png)
   - 挂机时可用 projectArk-hide 功能优化 CPU 占用至 1~3%，避免风扇转动
+  
 ### 人物系统
+
 #### 基础服饰
 - 提高人物属性，根据亲密度 (friendship) 给数码兽提供数值增幅，比例为 friendship/100
 - 四圣服饰
@@ -188,11 +200,37 @@ GDMO.7z
 - 私聊: /w id
 - 跳舞: /dance
 ### 蓝卡系统
-* opener(closer) :seal=1:50
+* opener(closer):seal=1:50
 * 解封数量与属性值关系：
-  |属性|10%|20%|40%|60%|80%|100%|
-  |-|-|-|-|-|-|-|-|
-  |**蓝卡数量**|1|50|200|500|1000|3000|
+  <table>
+      <tr>
+          <th>属性加成</th>
+          <td>10%</td>
+          <td>20%</td>
+          <td>40%</td>
+          <td>60%</td>
+          <td>80%</td>
+          <td>100%</td>
+      </tr>
+      <tr>
+          <th>蓝卡数量</th>
+          <td>1</td>
+          <td>50</td>
+          <td>200</td>
+          <td>500</td>
+          <td>1000</td>
+          <td>3000</td>
+      </tr>
+      <tr>
+          <th>opener 数量</th>
+          <td>1</td>
+          <td>1</td>
+          <td>4</td>
+          <td>10</td>
+          <td>20</td>
+          <td>60</td>
+      </tr>
+  </table>
 ### 任务系统
 ### 刷卡系统
 ### 基础副本
@@ -204,6 +242,7 @@ GDMO.7z
 ### 称号系统
 ### 氪金系统
 ### 常见道具及来源
+---
 ## 辅助程序及资料
 ### 弯刀
 [链接](/DATS/)
