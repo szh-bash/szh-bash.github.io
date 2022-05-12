@@ -4,7 +4,7 @@ title: GDMO 新手指引
 description: 愿你享受在数码世界的时光
 ---
 # 新手指引
-> Date: 2022.4.29
+> Date: 2022.5.12
 >
 > Author: Immortal.S
 
