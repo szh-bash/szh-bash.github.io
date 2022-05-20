@@ -31,8 +31,8 @@ owner_name: szh-bash
 owner_url: https://github.com/szh-bash
 google_analytics: G-Q0B9W70VGJ
 projectArk: False
-projectArk_version: v0.932
-projectArk_version_update: 2022/5/17
+projectArk_version: v0.933
+projectArk_version_update: 2022/5/20
 
 # Build settings
 theme: minima
