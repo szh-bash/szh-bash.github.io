@@ -6,9 +6,9 @@ projectArk: True
 ---
 
 # Document
-> Version: v0.82
+> Version: v0.94
 >
-> Date: 2022.4.16
+> Date: 2022.5.23
 >
 > Author: Immortal.S
 
@@ -32,7 +32,7 @@ projectArk: True
         - [NoCD](#nocd)
     - [Login](#login)
     - [Update](#update)
-    - [Email](#email)
+    - [Mail](#mail)
   - [其他](#其他)
 
 ## 环境要求
@@ -46,7 +46,14 @@ projectArk: True
 - 下载并解压最新 projectArk 压缩包
 - 下载并解压最新大漠插件压缩包并注册 dm.dll 到系统.如果出现注册成功后显示版本过低，则将大漠插件移至C盘任意目录重新注册即可
 - 阅读使用手册，学习设置 set/cfg.json 参数
-- 运行 projectArk.exe
+- 运行 projectArk.exe 生成参数文件
+- 初次登陆设置软件账号密码参数（账号密码请向作者索要）
+  
+      ...
+      "id": "guest",
+      "key": "guest",
+      "key-hbu5": "guest",
+      ...
 - 启动画面：
 
   ![23](/projectArk/resource/init.png)
@@ -98,9 +105,9 @@ projectArk: True
       - 游戏分辨率设置: 1024x768
       - 系统缩放设置: 100%
 - 注意：
-  - 程序将仅绑定设置路径中的客户端窗口
-  - 此模式绑定的窗口将无视 hide 功能的优化设置，启用 hide 功能后将自动限制为 fps 上限 20 帧
   - 如果遇到不抽扭蛋的情况，可以将 cfg.json['fastHbu5'] 改为 'N' 再次尝试，若还是不行请联系作者
+  - 启用 hide 功能后将无视用户设置，默认采用 cpu=1|rate=20
+  - 程序将仅绑定 configure 中设定的 gdmo_path 客户端程序
 
 ### Colo
 - 功能：自动快速召唤 Colo 下一关，可在中途转为弯刀打怪，后两种打怪模式下角色可提前自动跑至下一层 BOSS 刷新点等待（需要正确设置当前层数），反馈每层击杀怪物时间以及总 Colo 时间
@@ -146,17 +153,18 @@ projectArk: True
      ![23](/projectArk/resource/hide.png)
     - hide: 是否隐藏 DMO 及其他窗口
 
-          - 0，不启用隐藏功能
-          - 1，启用隐藏功能
-          - 2, 仅隐藏 DMO 进程中非客户端窗口，如启动时游戏盾 LOGO
+          0: 不启用隐藏功能
+          1: 启用隐藏功能
+          2: 仅隐藏 DMO 进程中非客户端窗口，如启动时游戏盾 LOGO
     - cpu: 影响 rate 值意义 
 
-          - 0, rate 值越大优化 CPU 占用效果越好
-          - 1，rate 值代表 DMO 最大 fps 值
+          0: rate 值越大优化 CPU 占用效果越好
+          1: rate 值代表 DMO 最大 fps 值
     - rate: 意义取决于 cpu 值
     
           - 非负整数，0 代表不优化 CPU 占用
-          - 仅对被弯刀或本程序其他功能绑定的 DMO 窗口生效，未绑定的 DMO 窗口默认极致优化（1fps)
+          - 未被弯刀或 projectArk(login|hbu5) 绑定的 DMO 窗口默认采用 cpu=1|rate=1
+          - hbu5 绑定的窗口默认采用 cpu=1|rate=20
     - 参数更新后重启 Hide 即可生效；点击 save 更新 set/cfg.json 文件内容
     - cfg.json["hide"~"downCpu"]
   - cfg.json 参数设置：隐藏非 DMO 窗口
@@ -252,26 +260,20 @@ projectArk: True
   - 路径用双引号括起，逗号隔开相邻路径
   - '/' 或 '\\\\'划分客户端路径，不可用反斜杠 '\\'
   
-### Email
-- 功能，点击 Email 按钮启用
-  - 功能：连续登陆用户填写的账户，每个账户登录默认角色领取所有邮件并尝试领取顽固票后退出
-  - 顽固票说明：需要将驯兽师挪到顽固兽 NPC 面前才可以自动领取顽骨副本票
-  - cfg 字段
+### Mail
+- 界面：
 
-        - cfg.json["receiver"\]: [["账号"，"密码"，"二级密码"],["账号"，"密码"，"二级密码"]\]
-        - 账户信息用中括号括起，账号间用逗号隔开
-        - 必须用双引号
-- 新功能**仍在开发中**
-  - 界面：
+  ![12](/projectArk/resource/Mail.png)
+- 核心功能：
+  - 后台批量登陆账号，自动领取邮件、活动礼包等
+  - 支持空号自动创建一个随机ID、随机角色、随机数码兽
+  - 支持新角色自动做新手指引（需要借助未在挂机的弯刀脚本，自动任务选上“横滨镇”）
+- 功能说明
 
-    ![12](/projectArk/resource/Mail.png)
-  - 功能说明
-
-        - 核心功能：自动领取每日、特殊时段奖励，无需人为监管、不影响挂机账号，部分功能需要借用弯刀脚本
-        - egg：领取指定天数百日蛋
-        - mail：领取邮件
-        - event：领取特殊时段在线奖励
-        - ticket：领取门票，需要借用弯刀脚本-自动领票功能
+      - mail：领取邮件
+      - event：领取活动登陆奖励
+      - expansion: 自动使用背包扩展
+- 限制：仅限国际服奥米加区（GDMO-Omegamon）
 
 
 ## 其他
