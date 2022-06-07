@@ -97,7 +97,7 @@ projectArk: True
   ![12](/projectArk/resource/PreLoad.png)
 
 ### Hbu5
-- 功能：自动扭蛋脚本，出货率约为 1 D-CodeII = 1 hbu5，自动断线重连
+- 功能：自动扭蛋脚本，出货率约为 1.2 D-CodeII = 1 hbu5，自动断线重连
 - 设置：
 
       - 填写 configure 页面中的账号、密码、二级密码（steam 用户无需填写）、客户端路径 (gdmo.exe) 信息并 save
