@@ -65,7 +65,7 @@ description: 愿你享受在数码世界的时光
 - [下载](https://dmo.gameking.com/download/GameDownload.aspx)
   
 ### 群文件
-GDMO.7z
+GDMO.7z，右键-转发-选择自己的 QQ，这样可以满速下载
 ### 官网账号注册
 * 点击官网 SignUP 或上述链接，给邮箱发送注册链接
 * 需要 VPN（不是加速器） 在注册页面通过谷歌机器人验证才可注册，可以找群友帮忙注册
@@ -195,7 +195,7 @@ GDMO.7z
         - hbu4 可由 rare coin 扭蛋机获得，扭蛋币产自在线时长奖励或竞技场NPC兑换
       - 活动
       - 在线时长奖励
-      - 特殊渠道：projectArk 自动截胡 D-CodeII 扭蛋机 hbu5，日产 40+ hbu5 左右，code2:hbu5 消耗率约为 1.2:1，服务费 5 元/天 可能需要排队。成本毛估 400m 一个 hbu5
+      - 特殊渠道：projectArk 自动截胡 D-CodeII 扭蛋机 hbu5，日产 40+ hbu5 左右，code2:hbu5 消耗率约为 1.2:1，服务费 8 元/天 可能需要排队。成本毛估 400m 一个 hbu5
   - 低成本孵化经验：
     - 金蛋：只孵五阶或者特殊金蛋（无蓝蛋的数码兽）
     - 充足蓝蛋：孵化至 4 阶然后开始用 hbu5 保护至 5 阶
