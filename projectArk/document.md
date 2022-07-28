@@ -330,7 +330,7 @@ projectArk: True
   - both，锁定键鼠
   - mouse，锁定鼠标输入
   - keyboard，锁定键盘输入
-- evp: 主兽 evp $< 25\%$ 吃药
+- evp: 主兽 evp < 25% 吃药
   - 下拉菜单选择药品种类
   - cfg.json 设置单次吃药个数
     
