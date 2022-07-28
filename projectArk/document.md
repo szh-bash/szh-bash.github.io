@@ -6,9 +6,9 @@ projectArk: True
 ---
 
 # Document
-> Version: v0.97
+> Version: v1.15
 >
-> Date: 2022.6.13
+> Date: 2022.7.28
 >
 > Author: Immortal.S
 
@@ -33,6 +33,7 @@ projectArk: True
     - [Login](#login)
     - [Update](#update)
     - [Mail](#mail)
+  - [DigimonRPG](#digimonrpg)
   - [其他](#其他)
 
 ## 环境要求
@@ -288,6 +289,60 @@ projectArk: True
 - 限制：
   - 仅限国际服奥米加区（GDMO-Omegamon）
   - 自动领取邮件的角色需要完成新手任务
+
+## DigimonRPG
+- 界面：
+
+  ![12](/projectArk/resource/RPG.png)
+- roll: 不定时打开转盘检查抽奖
+- digimon: 野外自动识别的数码兽
+- auto: 野外向识别到的数码兽自动发起对战
+- card: 自动刷卡
+  - cfg.json 设置使用的卡片槽（暂不支持自定义，默认使用前三张卡
+      
+        ...
+        "RPG":{
+            ...
+            "card":{
+                "on":1,
+                "key":"123" // 用背包卡槽123的卡；"456"就是用卡槽456的卡
+            }
+            ...
+        }
+- summon: 自动召唤
+  - cfg.json 设置召唤槽
+            
+        ...
+        "RPG":{
+            ...
+            "summon":{
+                "on":1,
+                "slot":"01" // 对战界面从左往右数前两个召唤槽
+            }
+            ...
+        }
+- evolve: 开局自动进化主C
+- catch: 自动捕捉
+- skill: 主C攻击技能
+- enemy: 最大怪物数量
+- lock: 锁定对战期键鼠输入
+  - none，不锁定
+  - both，锁定键鼠
+  - mouse，锁定鼠标输入
+  - keyboard，锁定键盘输入
+- evp: 主兽 evp $< 25\%$ 吃药
+  - 下拉菜单选择药品种类
+  - cfg.json 设置单次吃药个数
+    
+        ...
+        "RPG":{
+          ...
+          "evp":{
+              "type": 1,
+              "times": 4 （代表一次吃4瓶evp药）
+          }
+          ...
+        }
 
 
 ## 其他
