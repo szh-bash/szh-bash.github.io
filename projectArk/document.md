@@ -6,9 +6,9 @@ projectArk: True
 ---
 
 # Document
-> Version: v1.15
+> Version: v1.21
 >
-> Date: 2022.7.28
+> Date: 2022.7.31
 >
 > Author: Immortal.S
 
@@ -296,9 +296,9 @@ projectArk: True
   ![12](/projectArk/resource/RPG.png)
 - roll: 不定时打开转盘检查抽奖
 - digimon: 野外自动识别的数码兽
-- auto: 野外向识别到的数码兽自动发起对战
+- auto: 野外向识别到的数码兽自动发起对战，手刷建议关闭 auto 可以大幅提升对战识别效率
 - card: 自动刷卡
-  - cfg.json 设置使用的卡片槽（暂不支持自定义，默认使用前三张卡
+  - cfg.json 设置使用的卡片槽
       
         ...
         "RPG":{
