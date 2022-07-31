@@ -322,7 +322,7 @@ projectArk: True
             ...
         }
 - evolve: 开局自动进化主C
-- catch: 自动捕捉
+- catch: 自动捕捉，1hp 模式要求将一血卡放至卡槽1
 - skill: 主C攻击技能
 - enemy: 最大怪物数量
 - lock: 锁定对战期键鼠输入
