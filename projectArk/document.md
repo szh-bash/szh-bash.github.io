@@ -6,9 +6,9 @@ projectArk: True
 ---
 
 # Document
-> Version: v1.21
+> Version: v1.28
 >
-> Date: 2022.7.31
+> Date: 2022.8.9
 >
 > Author: Immortal.S
 
@@ -178,7 +178,7 @@ projectArk: True
 
 ### DATS - 支持全服
 ##### 说明
-- 功能：通过持续监控 dats.exe 的挂机过程实现相应自动化功能，具体表现依据 DATS 页面参数设定。
+- 功能：通过持续监控弯刀挂机过程实现相应自动化功能，具体表现依据 DATS 页面参数设定。
 - 参数:
   - cfg.json:
 
@@ -190,12 +190,14 @@ projectArk: True
           "Mode": "野外" 
         }
         ...
-      (若守护的是副本模式就把“野外”改为“副本”，第二行服务器同理)
-- 使用：主界面单击 DATS 启用功能，去除勾选目标 dats.exe 的 “掉线重连” 并点击“开始”
-- 注意：本功能运行期间 **不可用 Hide 功能隐藏 dats.exe 窗口**，目前只支持单个 dats.exe 挂机
+      若守护的是副本模式就把"野外"改为"副本"；
+      服务器同理，国际服steam把"国际服"改成 "steam"
+- 使用：主界面单击 DATS 启用功能；取消勾选弯刀“掉线重连”再点击“开始”挂机
+- 注意：本功能运行期间 **不可用 Hide 功能隐藏弯刀窗口**；只支持守护单个弯刀脚本 
 - 界面：
 
   ![12](/projectArk/resource/DATS.png)
+
 ##### BSoDGuard
 - 功能：防止 dats 断线重连时可能导致的电脑蓝屏问题
 - **默认启用**
@@ -310,6 +312,8 @@ projectArk: True
             ...
         }
 - summon: 自动召唤
+  - once 模式队长只召唤一次，利用第二只宠召唤第三只宠使队长提前一回合出手
+  - twice 模式队长连招两只宠，带练两只低级满速数码兽时建议用此模式
   - cfg.json 设置召唤槽
             
         ...
@@ -321,9 +325,10 @@ projectArk: True
             }
             ...
         }
-- evolve: 开局自动进化主C
-- catch: 自动捕捉，1hp 模式要求将一血卡放至卡槽1
-- skill: 主C攻击技能
+- evolve: 开局队长自动进化
+- catch: 自动捕捉
+  - 1hp 模式要求将一血卡放至卡槽1，且 card 调为 off
+- skill: 队长攻击技能
 - enemy: 最大怪物数量
 - lock: 锁定对战期键鼠输入
   - none，不锁定
