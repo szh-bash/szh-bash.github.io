@@ -6,9 +6,9 @@ projectArk: True
 ---
 
 # Document
-> Version: v1.28
+> Version: v1.31
 >
-> Date: 2022.8.9
+> Date: 2022.9.1
 >
 > Author: Immortal.S
 
@@ -179,19 +179,7 @@ projectArk: True
 ### DATS - 支持全服
 ##### 说明
 - 功能：通过持续监控弯刀挂机过程实现相应自动化功能，具体表现依据 DATS 页面参数设定。
-- 参数:
-  - cfg.json:
-
-        ...
-        "DATS":{
-          ...
-          "ExePath": "D:\\Game\\DigimonMasters\\DATS v5.91\\dats.exe",
-          "Server-0": "国际服",
-          "Mode": "野外" 
-        }
-        ...
-      若守护的是副本模式就把"野外"改为"副本"；
-      服务器同理，国际服steam把"国际服"改成 "steam"
+- 参数：Config 页面设置 dats.exe 启动路径；DATS 页面设置服务器、挂机模式
 - 使用：主界面单击 DATS 启用功能；取消勾选弯刀“掉线重连”再点击“开始”挂机
 - 注意：本功能运行期间 **不可用 Hide 功能隐藏弯刀窗口**；只支持守护单个弯刀脚本 
 - 界面：
