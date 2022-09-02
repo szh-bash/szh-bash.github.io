@@ -6,9 +6,9 @@ projectArk: True
 ---
 
 # Document
-> Version: v1.31
+> Version: v1.33
 >
-> Date: 2022.9.1
+> Date: 2022.9.2
 >
 > Author: Immortal.S
 
@@ -21,15 +21,15 @@ projectArk: True
     - [Fast Initialize](#fast-initialize)
     - [Hbu5](#hbu5)
     - [Colo](#colo)
-    - [Kill - 支持全服](#kill---支持全服)
-    - [Top - 支持全服](#top---支持全服)
-    - [Hide - 支持全服](#hide---支持全服)
-    - [DATS - 支持全服](#dats---支持全服)
+    - [Kill - AllServer](#kill---allserver)
+    - [Top - AllServer](#top---allserver)
+    - [Hide - AllServer](#hide---allserver)
+    - [DATS - AllServer](#dats---allserver)
         - [说明](#说明)
         - [BSoDGuard](#bsodguard)
         - [ReLogin - 仅支持单个弯刀脚本](#relogin---仅支持单个弯刀脚本)
         - [NoACT](#noact)
-        - [NoCD](#nocd)
+        - [Start](#start)
     - [Login](#login)
     - [Update](#update)
     - [Mail](#mail)
@@ -130,13 +130,13 @@ projectArk: True
 
   ![12](/projectArk/resource/Colo.png)
 
-### Kill - 支持全服
+### Kill - AllServer
 - 功能：杀死最顶层 DMO 窗口所在进程，可选择杀死仍处于加载保护盾阶段的 DMO 进程
 
-### Top - 支持全服
+### Top - AllServer
 - 功能：持续动态智能置顶非 DMO 窗口，在 dmo 弹窗后 0.3s 内切换为之前正在阅读的窗口
 
-### Hide - 支持全服
+### Hide - AllServer
 - 功能
   - 自动优化全部 DMO 窗口 CPU 占用，最低可降低至 **1%** 以下
   - 自动隐藏全部 DMO 窗口，包括启动阶段的奥米加图标
@@ -176,12 +176,17 @@ projectArk: True
         - 窗口类型可省略
         - 具体可联系作者获取目标进程相关参数
 
-### DATS - 支持全服
+### DATS - AllServer
 ##### 说明
 - 功能：通过持续监控弯刀挂机过程实现相应自动化功能，具体表现依据 DATS 页面参数设定。
 - 参数：Config 页面设置 dats.exe 启动路径；DATS 页面设置服务器、挂机模式
-- 使用：主界面单击 DATS 启用功能；取消勾选弯刀“掉线重连”再点击“开始”挂机
-- 注意：本功能运行期间 **不可用 Hide 功能隐藏弯刀窗口**；只支持守护单个弯刀脚本 
+- 使用：
+  - 取消勾选弯刀“掉线重连”再点击“开始”挂机
+  - 主界面单击 DATS 启用功能
+- 注意：
+  - 停止弯刀时，保持弯刀处于日志界面，确保游戏**未处在地图加载界面**，点击弯刀“停止”按钮然后等待，直到 ark **日志显示 "dats stopped"** 再进行其他操作
+  - 本功能运行期间 **不可用 Hide 功能隐藏弯刀窗口**
+  - 只支持守护单个弯刀脚本 
 - 界面：
 
   ![12](/projectArk/resource/DATS.png)
@@ -192,10 +197,12 @@ projectArk: True
 
 ##### ReLogin - 仅支持单个弯刀脚本
 - 功能：dats 崩溃后自动重启并挂机
-- 参数设置：cfg["DATS"]["ExePath"] 字段设置 "dats.exe" 启动路径
 
 ##### NoACT
 - 功能：DMO 登录后自动开启无动作
+
+##### Start
+- 功能：若 PC 无 dats 进程则自动登录 dats 并开始挂机
 
 <!-- ##### HP
 - 功能：检测到 dats 开始吃药后停止挂机，连续吃若干口药后继续挂机
@@ -205,9 +212,9 @@ projectArk: True
 - 功能：数码兽 DS 耗尽后自动退化再进化，适用于小号挂野外
 - 使用说明：DATS 设置数码兽回蓝按钮为非吃药键，例如攻击键 (默认为 1) -->
 
-##### NoCD
+<!-- ##### NoCD
 - 功能：DMO 登录后自动开启无 CD 进化
-- 注意：dats 挂机后会默认关闭无 CD 进化，本属性比较鸡肋
+- 注意：dats 挂机后会默认关闭无 CD 进化，本属性比较鸡肋 -->
 
 ### Login
 - 功能
