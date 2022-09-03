@@ -134,13 +134,14 @@ GDMO.7z，右键-转发-选择自己的 QQ，这样可以满速下载
   - 黄球衣 [90D] [30D]
   
 #### 首饰系统
-- 前中期一般购买四圣闪首饰（耳环只有青龙是四属性）、皇骑X手镯，之后升级金红手镯，按需购买危机首饰，肝帝高玩可制作四圣困难饰品
+- 前中期一般购买四圣闪首饰（耳环只有青龙是四属性）、皇骑X手镯，之后升级金红手镯，按需购买危机首饰，肝帝高玩可制作四圣困难饰品。
+- 周币制作无限高级耳环或维护币兑换随机四核耳环赌紫红四核耳环，两者均可 CD CD HT HT，前者满值
 - 可以接受属性：Attack(AT)、Critical Damage(CD)、HP、Basic Attribute(BA)、CT、SKILL
 - 必须的属性：（越靠前越优先）
   - 戒指：双 AT，其他可选 BA、HP、CT、SKILL
   - 项链：Attack Speed(AS) CD，其他可选 AT、ATT、CT、HP、SKILL
-  - 耳环：CD HT CD，其他可选 ATT、CT、HP
-  - 手镯：CD HT CD AT，其他可选 CT、HP
+  - 耳环：CD HT CD，其他可选 ATT、CT、HP、HT（紫红耳环或无线高级耳环才有第二条HT）
+  - 手镯：CD HT CD AT，其他可选 HT、CT、HP
   - 增加首饰能量：ADPS
   - 增加洗点次数：ARIS
   - 变更首饰全部属性：OCS
