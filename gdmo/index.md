@@ -4,7 +4,7 @@ title: GDMO 新手指引
 description: 愿你享受在数码世界的时光
 ---
 # 新手指引
-> Date: 2022.5.12
+> Date: 2022.9.3
 >
 > Author: Immortal.S
 
@@ -140,7 +140,7 @@ GDMO.7z，右键-转发-选择自己的 QQ，这样可以满速下载
 - 必须的属性：（越靠前越优先）
   - 戒指：双 AT，其他可选 BA、HP、CT、SKILL
   - 项链：Attack Speed(AS) CD，其他可选 AT、ATT、CT、HP、SKILL
-  - 耳环：CD HT CD，其他可选 ATT、CT、HP、HT（紫红耳环或无线高级耳环才有第二条HT）
+  - 耳环：CD HT CD，其他可选 ATT、CT、HP、HT，紫红耳环或无限高级耳环才有第二条HT
   - 手镯：CD HT CD AT，其他可选 HT、CT、HP
   - 增加首饰能量：ADPS
   - 增加洗点次数：ARIS
@@ -196,7 +196,7 @@ GDMO.7z，右键-转发-选择自己的 QQ，这样可以满速下载
         - hbu4 可由 rare coin 扭蛋机获得，扭蛋币产自在线时长奖励或竞技场NPC兑换
       - 活动
       - 在线时长奖励
-      - 特殊渠道：projectArk 自动截胡 D-CodeII 扭蛋机 hbu5，日产 60+ hbu5 左右，code2:hbu5 消耗率约为 1.2:1，服务费 8 元/天 可能需要排队。成本毛估 400m 一个 hbu5
+      - 特殊渠道：projectArk 自动截胡 D-CodeII 扭蛋机 hbu5，日产 60+ hbu5 左右，最高达到过 99，code2:hbu5 消耗率约为 1.2:1
   - 低成本孵化经验：
     - 金蛋：只孵五阶或者特殊金蛋（无蓝蛋的数码兽）
     - 充足蓝蛋：孵化至 4 阶然后开始用 hbu5 保护至 5 阶
