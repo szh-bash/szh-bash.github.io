@@ -6,9 +6,9 @@ projectArk: True
 ---
 
 # Document
-> Version: v1.33
+> Version: v1.50
 >
-> Date: 2022.9.2
+> Date: 2022.10.3
 >
 > Author: Immortal.S
 
@@ -343,6 +343,7 @@ projectArk: True
           }
           ...
         }
+- item: 选择自动拾取的道具名称，需要关闭游戏内 “透明模式”，之后支持多选
 
 
 ## 其他
