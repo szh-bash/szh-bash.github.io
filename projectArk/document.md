@@ -18,7 +18,7 @@ projectArk: True
   - [更新方式](#更新方式)
   - [快捷键](#快捷键)
   - [功能介绍](#功能介绍)
-    - [Fast Initialize](#fast-initialize)
+    - [PreLoad](#preload)
     - [Hbu5](#hbu5)
     - [Colo](#colo)
     - [Kill - AllServer](#kill---allserver)
@@ -91,14 +91,15 @@ projectArk: True
 
 ## 功能介绍
 
-### Fast Initialize
-- 仅勾选常用功能以便加快 projectArk 程序启动速度
+### PreLoad
+- 选择需要显示的标签页面
+- 不勾选 DATS、Hide、Hbu5、Top 可以加快 projectArk 程序启动速度
 - 界面：
 
   ![12](/projectArk/resource/PreLoad.png)
 
 ### Hbu5
-- 功能：自动扭蛋脚本，出货率约为 1.2 D-CodeII = 1 hbu5，自动断线重连
+- 功能：自动后台截胡 hbu5 ，出货率约为 1.2 D-Code II = 1 hbu5，支持断线重连
 - 设置：
 
       - 填写 configure 页面中的账号、密码、二级密码（steam 用户无需填写）、客户端路径 (gdmo.exe) 信息并 save
@@ -106,7 +107,7 @@ projectArk: True
       - 游戏分辨率设置: 1024x768
       - 系统缩放设置: 100%
 - 注意：
-  - 如果遇到不抽扭蛋的情况，可以将 cfg.json["fastHbu5"] 改为 0 再次尝试，若还是不行请联系作者
+  - 如果遇到不抽扭蛋的情况，可尝试将 cfg.json["fastHbu5"] 改为 0 再次尝试，若还是不行请联系作者
   - 启用 hide 功能后将无视用户设置，默认采用 cpu=1\|rate=20
   - 程序将仅绑定 configure 中设定的 gdmo_path 客户端程序
 
@@ -318,12 +319,6 @@ projectArk: True
   - 1hp 模式要求将一血卡放至卡槽1，且 card 调为 off
 - skill: 队长攻击技能
 - enemy: 最大怪物数量，0 则对战中不攻击
-<!-- 
-- lock: 锁定对战期键鼠输入
-  - none，不锁定
-  - both，锁定键鼠
-  - mouse，锁定鼠标输入
-  - keyboard，锁定键盘输入 -->
 - evp: 主兽 evp < 25% 吃药
   - 下拉菜单选择药品种类
   - cfg.json 设置单次吃药个数
