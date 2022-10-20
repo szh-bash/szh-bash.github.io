@@ -318,7 +318,8 @@ projectArk: True
   - 1hp 模式要求将一血卡放至卡槽1，且 card 调为 off
 - skill: 队长攻击技能
 - enemy: 最大怪物数量，0 则对战中不攻击
-<!-- - lock: 锁定对战期键鼠输入
+<!-- 
+- lock: 锁定对战期键鼠输入
   - none，不锁定
   - both，锁定键鼠
   - mouse，锁定鼠标输入
