@@ -55,6 +55,9 @@ projectArk: True
       "key": "guest",
       "key-hbu5": "guest",
       ...
+- 网络要求：
+  - 启动时不可将 127.0.0.1 转发至代理，加载动画进程通信会出错
+  - 可尝试关闭全局代理、加速后再次启动 ark，成功启动后可随意使用代理、加速
 - 启动画面：
 
   ![23](/projectArk/resource/init.png)
