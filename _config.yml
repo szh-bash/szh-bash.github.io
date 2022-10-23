@@ -29,10 +29,11 @@ github_username:  szh-bash
 author: Immortal.S
 owner_name: szh-bash
 owner_url: https://github.com/szh-bash
+fastgit_url: https://fastgit.immortal-s.asia/https://raw.githubusercontent.com/szh-bash/szh-bash.github.io/main
 google_analytics: G-Q0B9W70VGJ
 projectArk: False
-projectArk_version: v1.79
-projectArk_version_update: 2022/10/22
+projectArk_version: v1.80
+projectArk_version_update: 2022/10/23
 
 # Build settings
 theme: minima
