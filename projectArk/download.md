@@ -25,13 +25,25 @@ projectArk: True
       <!-- <A href= "/projectArk/download/projectArk_installer.exe">projectArk</A> -->
       <script type="text/javascript">
         var url="{{ site.fastgit_url }}";
-        document.write("<a href=\""+url+"/projectArk/download/projectArk_installer.exe\">projectArk</a>");
+        document.write("<a href=\""+url+"/projectArk/download/win11/projectArk_installer.exe\">projectArk</a>");
       </script>
     </TD>
     <TD class="Item" align="center">8.87 MB</TD>
     <TD class="Item" align="center">{{ site.projectArk_version_update }}</TD>
     <TD class="Item" align="center">{{ site.projectArk_version }}</TD>
-    <TD class="Item">See <a style="text-decoration:none;" href="/projectArk/document">Document</a></TD>
+    <TD class="Item">Advanced, windows 10/11 supported, read <a style="text-decoration:none;" href="/projectArk/document">Document</a></TD>
+  </TR>
+  <TR>
+    <TD class="Item" align="center">
+      <script type="text/javascript">
+        var url="{{ site.fastgit_url }}";
+        document.write("<a href=\""+url+"/projectArk/download/win7/projectArk_installer.exe\">projectArk</a>");
+      </script>
+    </TD>
+    <TD class="Item" align="center">8.87 MB</TD>
+    <TD class="Item" align="center">{{ site.projectArk_version_update }}</TD>
+    <TD class="Item" align="center">{{ site.projectArk_version }}</TD>
+    <TD class="Item">windows 7/10/11 supported, read <a style="text-decoration:none;" href="/projectArk/document">Document</a></TD>
   </TR>
   <TR>
     <TD class="Item" align="center">
