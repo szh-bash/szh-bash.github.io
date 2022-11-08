@@ -6,9 +6,9 @@ projectArk: True
 ---
 
 # Document
-> Version: v1.79
+> Version: v1.90
 >
-> Date: 2022.10.22
+> Date: 2022.11.9
 >
 > Author: Immortal.S
 
@@ -301,7 +301,9 @@ projectArk: True
   - "#Maze-Random-Run" 为迷宫随机跑模式，注意事先讲人物移到开阔地带远离传送门
 - auto: 野外向识别到的数码兽自动发起对战，手刷建议关闭 auto 可以大幅提升对战识别效率
 - card: 自动刷卡
-  - 支持自动补卡，根据点击 run 时的备卡状态，某卡槽消耗完毕后自动使用主卡包中相应的卡片进行填充
+  - off: 不自动上卡
+  - on: 自动上卡
+  - auto: 自动上卡，用完后自动补卡，使用主卡包中相应的卡片进行补充
   - cfg.json 设置使用的卡片槽
       
         ...
