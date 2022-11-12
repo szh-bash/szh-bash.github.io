@@ -6,9 +6,9 @@ projectArk: True
 ---
 
 # Document
-> Version: v1.91
+> Version: v1.97
 >
-> Date: 2022.11.9
+> Date: 2022.11.13
 >
 > Author: Immortal.S
 
@@ -295,6 +295,9 @@ projectArk: True
 - 界面：
 
   ![12](/projectArk/resource/RPG.png)
+- 画面设置:
+
+  ![13](/projectArk/resource/RPG_Requirement.png)
 - roll: 不定时打开转盘检查抽奖
 - digimon: 
   - 野外自动识别的数码兽，同种不同等级均可识别
