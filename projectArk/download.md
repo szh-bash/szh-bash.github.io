@@ -25,7 +25,7 @@ projectArk: True
       <!-- <A href= "/projectArk/download/projectArk_installer.exe">projectArk</A> -->
       <script type="text/javascript">
         var url="{{ site.fastgit_url }}";
-        document.write("<a href=\""+url+"/projectArk/download/win11/projectArk_installer.exe\">projectArk</a>");
+        document.write("<a href=\""+url+"/projectArk/download/win11/ProjectArk_Installer.exe\">ProjectArk</a>");
       </script>
     </TD>
     <TD class="Item" align="center">9.84 MB</TD>
@@ -37,7 +37,7 @@ projectArk: True
     <TD class="Item" align="center">
       <script type="text/javascript">
         var url="{{ site.fastgit_url }}";
-        document.write("<a href=\""+url+"/projectArk/download/win7/projectArk_installer.exe\">projectArk</a>");
+        document.write("<a href=\""+url+"/projectArk/download/win7/ProjectArk_Installer.exe\">ProjectArk-win7</a>");
       </script>
     </TD>
     <TD class="Item" align="center">9.61 MB</TD>
