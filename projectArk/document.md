@@ -67,8 +67,8 @@ projectArk: True
   ![23](/projectArk/resource/main.png)
 
 ## 更新方式
-- 群文件下载更新
-- projectArk 运行中推送更新
+- 官网下载更新
+- projectArk 运行时右键系统托盘图标-Update
 - projectArk 启动时自动更新，保留参数设置
   - cfg.json
 
@@ -79,7 +79,7 @@ projectArk: True
         否则设置为 N，程序将在更新完毕后启动
 
 ## 快捷键
-- ctrl-e: 隐藏 projectArk 窗口
+<!-- - ctrl-e: 隐藏 projectArk 窗口 -->
 - ctrl-w: 关闭 projectArk
 - ctrl-s: 保存参数设置
 - cfg.json 自定义快捷键位
@@ -318,7 +318,7 @@ projectArk: True
             }
             ...
         }
-- summon: 自动召唤，需要**关闭游戏内透明效果**
+- summon: 自动召唤
   - 1-单招
   - 2:once-模式队长只召唤一次，利用第二只宠召唤第三只宠使队长提前一回合出手
   - 2:twice-模式队长连招两只宠，带练两只低级满速数码兽时建议用此模式
@@ -344,7 +344,10 @@ projectArk: True
           ...
         }
 - item: 自动捡物，背包满后自动不捡
-  - 全捡模式："all" ，拾取列表中的全部道具
+  - 选定捡模式："specific" ，拾取 select item 中勾选的道具
+    - 右键托盘栏图标-select item-勾选道具
+    - configure 中 RPG-item 字段直接设置捡(1)/不捡(0)
+    - 修改后记得**保存**，点击窗口内 save 或者快捷键 ctrl-s
   - 单捡模式：选择列表中的具体道具
   - 不捡：none
   - 注意事项：不同玩家由于显示器参数不同可能会导致游戏内字体形状差异，出现列表中物品无法拾取情况请咨询作者
