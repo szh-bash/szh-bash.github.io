@@ -47,19 +47,6 @@ projectArk: True
   </TR>
   <TR>
     <TD class="Item" align="center">
-      <!-- <A href="/projectArk/download/dm7.2242.zip">dmplugin</A> -->
-      <script type="text/javascript">
-        var url="{{ site.fastgit_url }}";
-        document.write("<a href=\""+url+"/projectArk/download/dm7.2242.zip\">dmplugin</a>");
-      </script>
-    </TD>
-    <TD class="Item" align="center">7.08 MB</TD>
-    <TD class="Item" align="center">2022/10/22</TD>
-    <TD class="Item" align="center">v7.2242</TD>
-    <TD class="Item">解压后双击“注册大漠插件到系统”，添加 dm.dll 至防火墙白名单</TD>
-  </TR>
-  <TR>
-    <TD class="Item" align="center">
       <!-- <A href="/projectArk/download/vc++2015_redist.x64.exe">vc++2015_redist_x64</A> -->
       <script type="text/javascript">
         var url="{{ site.fastgit_url }}";
