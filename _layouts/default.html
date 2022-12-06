@@ -86,7 +86,7 @@
             <center> 
             <ul>
               <li><a href="/">Home</a></li>
-              <li><a href="/gdmo/">GDMO</a></li>
+              <!-- <li><a href="/gdmo/">GDMO</a></li> -->
               <li>
                   <a href="/projectArk/">ProjectArk</a>
                   <!-- <ul>
@@ -109,9 +109,11 @@
       <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
       <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
       {% if page.projectArk %}
-        <a href="/projectArk/" class="btn">Introduction</a>
+        <a href="/projectArk/" class="btn">Intro</a>
         <a href="/projectArk/download" class="btn">Download</a>
-        <a href="/projectArk/document" class="btn">Document</a>
+        <a href="/projectArk/setup" class="btn">Setup</a>
+        <a href="/projectArk/dmo" class="btn">DMO</a>
+        <a href="/projectArk/rpg" class="btn">RPG</a>
       {% endif %}
       {% if site.github.is_project_page %}
         <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>

@@ -28,7 +28,7 @@ projectArk: True
         document.write("<a href=\""+url+"/projectArk/download/win11/ProjectArk_Installer.exe\">ProjectArk</a>");
       </script>
     </TD>
-    <TD class="Item" align="center">9.84 MB</TD>
+    <TD class="Item" align="center">11.60 MB</TD>
     <TD class="Item" align="center">{{ site.projectArk_version_update }}</TD>
     <TD class="Item" align="center">{{ site.projectArk_version }}</TD>
     <TD class="Item">Advanced, windows 10/11 supported, read <a style="text-decoration:none;" href="/projectArk/document">Document</a></TD>
@@ -40,7 +40,7 @@ projectArk: True
         document.write("<a href=\""+url+"/projectArk/download/win7/ProjectArk_Installer.exe\">ProjectArk-win7</a>");
       </script>
     </TD>
-    <TD class="Item" align="center">9.61 MB</TD>
+    <TD class="Item" align="center">9.88 MB</TD>
     <TD class="Item" align="center">{{ site.projectArk_version_update }}</TD>
     <TD class="Item" align="center">{{ site.projectArk_version }}</TD>
     <TD class="Item">windows 7/10/11 supported, read <a style="text-decoration:none;" href="/projectArk/document">Document</a></TD>
