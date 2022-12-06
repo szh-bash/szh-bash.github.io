@@ -26,7 +26,7 @@ projectArk: True
   
 - 主界面：
 
-  ![12](/projectArk/resource/rpg.png)
+  ![12](/projectArk/resource/RPG.png)
 
 
 ## 功能介绍
