@@ -6,7 +6,7 @@ projectArk: True
 ---
 
 # RPG
-> Version: v2.14
+> Version: v2.53
 >
 > Date: 2022.12.6
 
@@ -41,7 +41,7 @@ projectArk: True
 - card: 自动刷卡
   - off: 不上卡
   - on: 自动上卡
-  - auto: 自动上卡，用完后**从背包自动补卡**，使用相同的卡片进行补充若背包中没有则不补卡。支持中途手动换卡，不需要重新点 run
+  - auto: 自动上卡，用完后**从主背包自动补卡**，使用相同的卡片进行补充若背包中没有则不补卡。支持中途手动换卡，不需要重新点 run
   - cfg.json 设置使用的卡片槽
       
         ...
@@ -60,7 +60,7 @@ projectArk: True
   - slot: 召唤槽
     - slot0: 第一次召唤槽或单招
     - slot1: 第二次召唤槽
-- evolve: 开局队长自动进化，**无光环情况再开启否则对战会卡住**
+- evolve: 队长自动进化；死亡也后可自动进化。**进化阶段设置错误会导致不打怪**
 - catch: 自动捕捉
   - 1hp 模式要求将一血卡放至卡槽1，且 card 调为 off
 - skill: 队长攻击技能
@@ -82,7 +82,6 @@ projectArk: True
   - 选定捡模式："specific" ，拾取 select item 中勾选的道具
     - 右键托盘栏图标-select item-勾选道具
     - configure 中 RPG-item 字段直接设置捡(1)/不捡(0)
-    - 修改后记得**保存**，点击窗口内 save 或者快捷键 ctrl-s
   - 单捡模式：选择列表中的具体道具
   - 不捡：none
   - 注意事项：不同玩家由于显示器参数不同可能会导致游戏内字体形状差异，出现列表中物品无法拾取情况请咨询作者
@@ -92,6 +91,7 @@ projectArk: True
   - mouse: 仅锁定鼠标
   - keyboard: 仅锁定键盘
   - enemy 设为 0 则**不锁定**
+- 保存配置：点击 save 按钮或组合键 ctrl-s
 
 
 ## 其他
