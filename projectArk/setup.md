@@ -6,14 +6,15 @@ projectArk: True
 ---
 
 # Setup
-> Version: v2.14
+> Version: v2.54
 >
-> Date: 2022.12.6
+> Date: 2023.1.8
 
 - [Setup](#setup)
   - [环境要求](#环境要求)
   - [安装与启动](#安装与启动)
-  - [更新方式](#更新方式)
+  - [更新](#更新)
+  - [选择配置](#选择配置)
   - [快捷键](#快捷键)
   - [其他](#其他)
 
@@ -45,13 +46,18 @@ projectArk: True
 
   ![12](/projectArk/resource/time.png)
 
-## 更新方式
+## 更新
 - [官网](https://blog.immortal-s.asia/projectArk/download)下载更新
 - 检测到新版后右键托盘图标-Update
 
   ![12](/projectArk/resource/update_info.png)
 
   ![12](/projectArk/resource/update.png)
+
+## 选择配置
+- 右键图标-set-选择配置
+
+  ![12](/projectArk//resource/set.png)
 
 ## 快捷键
 <!-- - ctrl-e: 隐藏 projectArk 窗口 -->
