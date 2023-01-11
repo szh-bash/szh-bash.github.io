@@ -1,7 +1,7 @@
 ---
 layout: default
 title: ProjectArk
-description: The best auxiliary program for Digimon Masters Online Global
+description: The best auxiliary program for DMO & DigimonRPG
 projectArk: True
 ---
 # Purpose

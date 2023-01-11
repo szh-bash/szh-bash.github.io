@@ -1,14 +1,14 @@
 ---
 layout: default
 title: ProjectArk
-description: The best auxiliary program for Digimon Masters Online Global
+description: The best auxiliary program for DigimonRPG
 projectArk: True
 ---
 
 # DMO
-> Version: v2.14
+> Version: v2.56
 >
-> Date: 2022.12.6
+> Date: 2023.1.11
 
 - [DMO](#dmo)
     - [PreLoad](#preload)
@@ -37,46 +37,53 @@ projectArk: True
   ![12](/projectArk/resource/PreLoad.png)
 
 ### Hbu5
-- 功能：自动后台截胡 hbu5 ，出货率约为 1.2 D-Code II = 1 hbu5，支持断线重连
+> 游戏分辨率设置: 1024x768
+> 
+> 系统缩放设置: 100%
+
+- 功能：自动后台截胡 hbu5 ，出货率约为 1.2 D-Code II = 1 hbu5，支持断线重连，可预约使用时段
 - 设置：
 
-      - 填写 configure 页面中的账号、密码、二级密码（steam 用户无需填写）、客户端路径 (gdmo.exe) 信息并 save
+      - 填写 Config 中的账号、密码、二级密码（steam 用户无需填写）、客户端路径 (gdmo.exe) 信息并 save
       - 驯兽师的站位: 按“空格”可以与 D-Code II 扭蛋机对话，请确保 ark 可以自动打开扭蛋机并正确识别 HBU5 余量
-      - 游戏分辨率设置: 1024x768
-      - 系统缩放设置: 100%
 - 注意：
-  - 点击 Hbu5 即可启动/停止功能，不需要点击其他任何按钮
-  - 程序将仅绑定 configure 中设定的 gdmo 客户端程序
-  - 启用 hide 功能后将无视用户设置，默认采用 cpu=1\|rate=20
+  - 点击 Hbu5 即可启动/停止功能，**不需要点击**其他任何按钮
+  - 程序仅绑定 Config 中设定的 gdmo 客户端程序
+  - 同时启用 hide 默认锁 20 fps
 
 ### Colo
-- 功能：自动快速召唤 Colo 下一关，可在中途转为弯刀打怪，后两种打怪模式下角色可提前自动跑至下一层 BOSS 刷新点等待（需要正确设置当前层数），反馈每层击杀怪物时间以及总 Colo 时间
-- 环境要求：系统缩放 100%
+> 使用前请关闭与 NPC 对话界面和背包
+> 
+> 系统缩放设置: 100%
+
+- 界面:
+  
+  ![12](/projectArk/resource/Colo.png)
+- 功能：快速竞技场
 - 使用说明
   - 参数设置
 
         - mode
-          - summon only: 仅召唤
+          - summon only: 仅快速召唤
           - attack only: 仅打怪
-          - summon & attack: 召唤至指定层后转由 dats 打怪
+          - summon & attack: 快速召唤至指定层后转由 dats 打怪
         - start: 选择当前起始层
         - attack: 转为战斗的层数
         - 驯兽师自动召唤位置要求：按空格可以与 NPC 对话
   - 启动功能：点击 Colo 自动控制最顶层 DMO 窗口
   - 终止功能：再次点击 Colo
-- 注意事项：使用前请关闭与 NPC 对话界面以及背包
-- 界面：
-
-  ![12](/projectArk/resource/Colo.png)
 
 ### Kill - AllServer
-- 杀死最顶层 DMO 窗口所在进程，可选择杀死仍处于加载保护盾阶段的 DMO 进程
-- 也可杀死 RPG 进程
+- 强制杀死顶层 DMO 或 RPG
 
 ### Top - AllServer
-- 持续动态智能置顶非 DMO 窗口，在 dmo 弹窗后 0.3s 内切换为之前的顶层窗口
+- 动态置顶非 DMO 窗口，防弹窗
 
 ### Hide - AllServer
+> CPU 占用优化效果受到机器以及游戏场景限制
+> 
+> 系统缩放设置: 100%
+
 - 功能
   - 自动优化全部 DMO 窗口 CPU 占用，最低可降低至 **1%** 以下
   - 自动隐藏全部 DMO 窗口，包括启动阶段的奥米加图标
@@ -84,10 +91,7 @@ projectArk: True
   - 上述功能对断线重连的 DMO 窗口依然自动生效
     - 若 DATS 未被隐藏，projectArk 将在 DMO 被 DATS 绑定打怪后优化 CPU
     - 若 DATS 被隐藏，projectArk 将在 DMO 账号登录完成的 60 秒后优化 CPU
-- 注意: 
-  - CPU 具体优化与 CPU、游戏场景相关，**追 BOSS 时优化效果较差**
-  - 不可在 DMO 窗口正在加载地图或登陆过程中开始启动此功能
-- 使用：主页面单击 Hide 启用功能，具体表现依据 configure 页面参数以及 cfg.json 中参数设定
+- 使用：主页面单击 Hide 按钮启用/停止
 - DMO 相关功能字段
   - Configure 页面参数解释：隐藏功能及 DMO 优化
 
@@ -112,9 +116,8 @@ projectArk: True
 
         - cfg.json["hideWindow"]: [["进程名.exe", "窗口标题"，"窗口类型", 启用与否(1或0)], ["dats", "", "", 1]]
         - 数字 1 代表启用这条规则，0 则不启用
-        - 窗口标题参数为模糊匹配，可填入目标窗口的部分标题，可省略
-        - 窗口类型可省略
-        - 具体可联系作者获取目标进程相关参数
+        - 窗口标题参数为模糊匹配，可填入目标窗口的部分标题，可省略; 窗口类型可省略
+        - 联系作者获取目标进程相关参数
 
 ### DATS - AllServer
 ##### 说明
@@ -200,6 +203,8 @@ projectArk: True
   - '/' 或 '\\\\'划分客户端路径，不可用反斜杠 '\\'
   
 ### Mail
+> 功能过于强大，暂不对外开放
+
 - 界面：
 
   ![12](/projectArk/resource/Mail.png)
