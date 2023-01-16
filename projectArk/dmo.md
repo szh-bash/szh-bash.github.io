@@ -52,8 +52,6 @@ projectArk: True
   - 同时启用 hide 默认锁 20 fps
 
 ### Colo
-> 使用前请关闭与 NPC 对话界面和背包
-> 
 > 系统缩放设置: 100%
 
 - 界面:
