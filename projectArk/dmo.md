@@ -6,9 +6,9 @@ projectArk: True
 ---
 
 # DMO
-> Version: v2.56
+> Version: v2.65
 >
-> Date: 2023.1.11
+> Date: 2023.1.19
 
 - [DMO](#dmo)
     - [PreLoad](#preload)
@@ -83,34 +83,32 @@ projectArk: True
 > 系统缩放设置: 100%
 
 - 功能
-  - 自动优化全部 DMO 窗口 CPU 占用，最低可降低至 **1%** 以下
+  - 自动优化全部 DMO 进程 CPU 占用，最低可降低至 **1%** 以下
   - 自动隐藏全部 DMO 窗口，包括启动阶段的奥米加图标
   - 自动隐藏指定非 DMO 窗口，如 DATS、vmware 等
   - 上述功能对断线重连的 DMO 窗口依然自动生效
     - 若 DATS 未被隐藏，projectArk 将在 DMO 被 DATS 绑定打怪后优化 CPU
     - 若 DATS 被隐藏，projectArk 将在 DMO 账号登录完成的 60 秒后优化 CPU
-- 使用：主页面单击 Hide 按钮启用/停止
-- DMO 相关功能字段
-  - Configure 页面参数解释：隐藏功能及 DMO 优化
+- 用法：主页面单击 Hide 按钮启用/停止
+- 参数设置
+  - Config 页面：隐藏 DMO 和优化 DMO 进程 CPU 占用
 
      ![23](/projectArk/resource/hide.png)
     - hide: 是否隐藏 DMO 及其他窗口
 
-          0: 不启用隐藏功能
-          1: 启用隐藏功能
-          2: 仅隐藏 DMO 进程中非客户端窗口，如启动时游戏盾 LOGO
-    - cpu: 影响 rate 值意义 
+          0: 不隐藏
+          1: 全部隐藏
+          2: 部分隐藏，仅隐藏 DMO 进程中非 Client 窗口，如启动时游戏盾图标
+    - cpu: 优化模式
 
-          0: rate 值越大优化 CPU 占用效果越好
-          1: rate 值代表 DMO 最大 fps 值
-    - rate: 意义取决于 cpu 值
+          0: 增加系统延迟，此时 rate 值越大优化 CPU 效果越好
+          1: 锁定最大 FPS，此时 rate 值越小优化 CPU 效果越好
+    - rate: CPU 占用优化效果，意义取决于 cpu 值
     
-          - 非负整数，0 代表不优化 CPU 占用
-          - 未被弯刀或 projectArk(login|hbu5) 绑定的 DMO 窗口默认采用 cpu=1|rate=1
-          - hbu5 绑定的窗口默认采用 cpu=1|rate=20
-    - 参数更新后重启 Hide 即可生效；点击 save 更新 set/cfg.json 文件内容
-    - cfg.json["hide"~"downCpu"]
-  - cfg.json 参数设置：隐藏非 DMO 窗口
+          - 填入非负整数，0 代表不优化 CPU
+          - 特殊情况1：未被弯刀或 projectArk(login|hbu5) 绑定的 DMO 窗口默认采用 cpu=1|rate=1
+          - 特殊情况2：hbu5 绑定的窗口默认采用 cpu=1|rate=20
+  - cfg.json 参数设置：隐藏其他指定窗口
 
         - cfg.json["hideWindow"]: [["进程名.exe", "窗口标题"，"窗口类型", 启用与否(1或0)], ["dats", "", "", 1]]
         - 数字 1 代表启用这条规则，0 则不启用
@@ -126,7 +124,7 @@ projectArk: True
   - 取消勾选弯刀“掉线重连”再点击“开始”挂机
   - 主界面单击 DATS 启用功能
 - 注意：
-  - 停止弯刀时，**保持弯刀处于日志界面**，确保游戏**未处在地图加载界面**，点击弯刀“停止”按钮然后等待，直到 ark **日志显示 "dats stopped"** 再进行其他操作
+  - 点击弯刀“停止”按钮后，**保持弯刀处于日志界面**，确保游戏**未处在地图加载界面**，直到 ark **日志显示 "dats stopped"** 再进行其他操作
   - 本功能运行期间不可用 Hide 功能隐藏弯刀窗口
   - 只支持守护单个弯刀脚本 
 - 界面：
