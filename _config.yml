@@ -32,8 +32,8 @@ owner_url: https://github.com/szh-bash
 fastgit_url: https://fastgit.immortal-s.asia/https://raw.githubusercontent.com/szh-bash/szh-bash.github.io/main
 google_analytics: G-Q0B9W70VGJ
 projectArk: False
-projectArk_version: v2.94
-projectArk_version_update: 2023/5/31
+projectArk_version: v2.95
+projectArk_version_update: 2023/6/5
 projectArk_update_version: v2.0.0.0
 
 # Build settings
