@@ -56,7 +56,7 @@ projectArk: True
     <TD class="Item" align="center">13.80 MB</TD>
     <TD class="Item" align="center">2022/10/23</TD>
     <TD class="Item" align="center">x64</TD>
-    <TD class="Item">下载安装此库以解决无法启动程序的问题</TD>
+    <TD class="Item">安装此库修复程序启动错误</TD>
   </TR>
   <TR>
     <TD class="Item" align="center">
@@ -69,7 +69,7 @@ projectArk: True
     <TD class="Item" align="center">13.10 MB</TD>
     <TD class="Item" align="center">2022/10/23</TD>
     <TD class="Item" align="center">x86</TD>
-    <TD class="Item">下载安装此库以解决无法启动程序的问题</TD>
+    <TD class="Item">安装此库修复程序启动错误</TD>
   </TR>
 </TABLE>
 <!-- <p>Password: Please <A href="/">contact author</a></p> -->
