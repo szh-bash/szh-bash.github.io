@@ -20,19 +20,18 @@ projectArk: True
 
 ## 环境要求
 - 操作系统：windows 11 21H2 及之前
-- 系统缩放：100%
+- 系统缩放：**100%**
 - 网络：流畅访问[官网](https://blog.immortal-s.asia)
-- 硬盘：15 MB 及以上空间
+- 硬盘：25 MB 及以上空间
 
 ## 安装与启动
 - 下载并解压最新 projectArk 程序
-- 运行 projectArk.exe，初次登陆设置软件 id 和 key 参数（账号密码请向作者索要）
+- 登录界面：
+  - Safe: 安全模式，若需要兼容弯刀挂机则不勾选
+  - Guard1: 护盾1，需要关闭 Secure Boot，无法启动则不勾选
+  - Guard2: 护盾2，需要关闭 Secure Boot，无法启动则不勾选
   
-      ...
-      "id": "guest",
-      "key": "guest",
-      ...
-- 网络要求：启动时建议不要将 127.0.0.1 转发至代理
+  ![23](/projectArk/resource/ark_login.png)
 - 启动画面：
   - 若启动时长时间停留在启动画面，可尝试开/关全局代理、加速后再次启动 ark，成功启动后可随意开/关代理、加速器
   
