@@ -23,7 +23,7 @@ projectArk: True
 - 系统缩放：**100%**
 - 网络：流畅访问[官网](https://blog.immortal-s.asia)
 - 硬盘：25 MB 及以上空间
-- 防火墙：加入白名单
+- 防火墙：添加**信任/白名单**
 
 ## 安装与启动
 - 下载并解压最新 projectArk 程序
