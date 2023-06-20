@@ -21,7 +21,7 @@ projectArk: True
 ## 环境要求
 - 操作系统：windows 11 22H2 及之前
 - 系统缩放：**100%**
-- 网络：流畅访问[官网](https://blog.immortal-s.asia)
+- 网络：流畅访问[官网](https://blog.immortal-s.asia)，建议开启代理
 - 硬盘：25 MB 及以上空间
 - 防火墙：添加**信任/白名单**
 
@@ -34,7 +34,7 @@ projectArk: True
   
   ![23](/projectArk/resource/ark_login.png)
 - 启动画面：
-  - 若启动时长时间停留在启动画面，可尝试开/关全局代理、加速后再次启动 ark，成功启动后可随意开/关代理、加速器
+  - 若启动时长时间停留在启动画面，可尝试开/关全局代理、加速器、网络换成手机移动热点后再次启动 ark，成功启动后可随意开/关代理、加速器
   
   ![23](/projectArk/resource/init.png)
 
