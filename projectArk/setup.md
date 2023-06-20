@@ -23,13 +23,14 @@ projectArk: True
 - 系统缩放：**100%**
 - 网络：流畅访问[官网](https://blog.immortal-s.asia)
 - 硬盘：25 MB 及以上空间
+- 防火墙：加入白名单
 
 ## 安装与启动
 - 下载并解压最新 projectArk 程序
 - 登录界面：
   - Safe: 安全模式，若需要兼容弯刀挂机则不勾选
-  - Guard1: 护盾1，需要关闭 Secure Boot，无法启动则不勾选
-  - Guard2: 护盾2，需要关闭 Secure Boot，无法启动则不勾选
+  - Guard1/2: 护盾1/2，需要关闭 Secure Boot，无法启动或蓝屏则不勾选
+  - 注：Safe 模式本身已足够安全，Guard仅为皆为锦上添花
   
   ![23](/projectArk/resource/ark_login.png)
 - 启动画面：
