@@ -6,9 +6,9 @@ projectArk: True
 ---
 
 # Setup
-> Version: v2.54
+> Version: v3.00
 >
-> Date: 2023.1.8
+> Date: 2023.6.20
 
 - [Setup](#setup)
   - [环境要求](#环境要求)
@@ -19,7 +19,7 @@ projectArk: True
   - [其他](#其他)
 
 ## 环境要求
-- 操作系统：windows 11 21H2 及之前
+- 操作系统：windows 11 22H2 及之前
 - 系统缩放：**100%**
 - 网络：流畅访问[官网](https://blog.immortal-s.asia)
 - 硬盘：25 MB 及以上空间
