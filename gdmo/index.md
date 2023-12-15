@@ -203,7 +203,7 @@ GDMO.7z，右键-转发-选择自己的 QQ，满速下载
         - hbu4 可由 rare coin 扭蛋机获得，扭蛋币产自在线时长奖励或竞技场NPC兑换
       - 活动
       - 在线时长奖励
-      - 特殊渠道：projectArk 自动截胡 D-CodeII 扭蛋机 hbu5，日产 60+ hbu5 左右，最高达到过 99，code2:hbu5 消耗率约为 1.2:1
+      - 特殊渠道：ProjectArk 自动截胡 D-CodeII 扭蛋机 hbu5，日产 60+ hbu5 左右，最高达到过 99，code2:hbu5 消耗率约为 1.2:1
   - 低成本孵化经验：
     - 金蛋：只孵五阶或者特殊金蛋（无蓝蛋的数码兽）
     - 充足蓝蛋：孵化至 4 阶然后开始用 hbu5 保护至 5 阶
@@ -306,8 +306,8 @@ GDMO.7z，右键-转发-选择自己的 QQ，满速下载
 ### 弯刀
 [链接](/DATS/)
 
-### projectArk
-[链接](/projectArk/)
+### ProjectArk
+[链接](https://projectark.vip)
 
 ### 百科全书（hkdmoApp)
 App 版见群文件（HKDMOAPP:565321722 或 GDMO-OMG:606731979）
