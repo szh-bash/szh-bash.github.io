@@ -27,9 +27,6 @@ description: 愿你享受在数码世界的时光
       - [孵蛋](#孵蛋)
       - [练级](#练级)
       - [进化](#进化)
-        - [究极进化](#究极进化)
-        - [合体进化](#合体进化)
-        - [X进化](#x进化)
       - [强化](#强化)
       - [超越](#超越)
       - [删除](#删除)
@@ -48,10 +45,6 @@ description: 愿你享受在数码世界的时光
     - [氪金系统](#氪金系统)
     - [常见道具及来源](#常见道具及来源)
   - [辅助程序及资料](#辅助程序及资料)
-    - [弯刀](#弯刀)
-    - [ProjectArk](#ProjectArk)
-    - [百科全书（hkdmoApp)](#百科全书hkdmoapp)
-    - [DMO-Wiki](#dmo-wiki)
 
 ---
 
@@ -202,6 +195,7 @@ GDMO.7z，右键-转发-选择自己的 QQ，满速下载
       - 活动
       - 在线时长奖励
       - 特殊渠道：ProjectArk 自动截胡 D-CodeII 扭蛋机 hbu5，日产 60+ hbu5 左右，最高达到过 99，code2:hbu5 消耗率约为 1.2:1
+      - 特殊渠道：ProjectArk 自动截胡 D-CodeII 扭蛋机 hbu5，日产 60+ hbu5 左右，最高达到过 99，code2:hbu5 消耗率约为 1.2:1
   - 低成本孵化经验：
     - 金蛋：只孵五阶或者特殊金蛋（无蓝蛋的数码兽）
     - 充足蓝蛋：孵化至 4 阶然后开始用 hbu5 保护至 5 阶
@@ -301,11 +295,10 @@ GDMO.7z，右键-转发-选择自己的 QQ，满速下载
 ---
 ## 辅助程序及资料
 
-### [弯刀](/DATS/)
+[弯刀](/DATS/)
 
-### [ProjectArk](https://cf.projectark.vip)
+[ProjectArk](https://cf.projectark.vip)
 
-### [DMO-Wiki](https://dmowiki.com/Main_Page)（限制 CN-IP 访问）
+[DMO-Wiki](https://dmowiki.com/Main_Page): 限制 CN-IP 访问
 
-### 百科全书（hkdmoApp)
-App 版见群文件（QQ-GROUP: 565321722 或 606731979）
+百科全书（hkdmoApp): App 版见群文件（QQ-GROUP: 565321722 或 606731979）
